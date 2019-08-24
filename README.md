@@ -9,4 +9,4 @@
 定义关于landslide RESTful API相关类及函数
 
 # pytest.ini
-pytest运行参数
+配置pytest运行参数
