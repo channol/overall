@@ -1,0 +1,18 @@
+tcpdump: /root/log/result2019_08_24_11_09_50/capture2019_08_24_11_09_50.pcap: No such file or directory
+tcpdump: /root/log/result2019_08_24_11_12_13/capture2019_08_24_11_12_13.pcap: No such file or directory
+tcpdump: listening on any, link-type LINUX_SLL (Linux cooked), capture size 262144 bytes
+90 packets captured
+99 packets received by filter
+0 packets dropped by kernel
+tcpdump: listening on any, link-type LINUX_SLL (Linux cooked), capture size 262144 bytes
+32 packets captured
+49 packets received by filter
+0 packets dropped by kernel
+tcpdump: listening on any, link-type LINUX_SLL (Linux cooked), capture size 262144 bytes
+76 packets captured
+89 packets received by filter
+0 packets dropped by kernel
+tcpdump: listening on any, link-type LINUX_SLL (Linux cooked), capture size 262144 bytes
+206 packets captured
+230 packets received by filter
+0 packets dropped by kernel

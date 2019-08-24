@@ -1,2 +1,0 @@
-INFO     root:landslide.py:22 the url: http://10.133.6.19:8080/api/runningTest
-INFO     root:landslide.py:24 response is 200

@@ -1,0 +1,21 @@
+INFO     root:landslide.py:22 the url: http://10.133.6.19:8080/api/runningTests
+INFO     root:landslide.py:24 response is 200
+INFO     root:config.py:19 ===start to capture===
+INFO     root:landslide.py:39 the url: http://10.133.6.19:8080/api/runningTests
+INFO     root:landslide.py:40 <Response [201]>
+INFO     root:landslide.py:57 {
+   "url": "http://10.133.6.19:8080/api/runningTests/215",
+   "id": "215",
+   "library": 10828,
+   "name": "case_001_pdu_establishment",
+   "user": "qinglong",
+   "testStateOrStep": "INIT"
+}
+
+INFO     root:landslide.py:59 test id is : 215
+INFO     root:config.py:23 ===stop to capture===
+INFO     root:config.py:32 scp root@172.0.5.27:/root/log/result2019_08_24_11_56_33/smfsm2019_08_24_11_56_33.log .
+INFO     root:config.py:33 vim scp://root@172.0.5.27//root/log/result2019_08_24_11_56_33/smfsm2019_08_24_11_56_33.log
+INFO     root:config.py:37 scp root@172.0.5.27:/root/log/result2019_08_24_11_56_33/pfcp2019_08_24_11_56_33.log .
+INFO     root:config.py:38 vim scp://root@172.0.5.27//root/log/result2019_08_24_11_56_33/pfcp2019_08_24_11_56_33.log
+INFO     root:config.py:42 scp root@172.0.5.27:/root/log/result2019_08_24_11_56_33/capture2019_08_24_11_56_33.pcap .
