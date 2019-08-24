@@ -2,6 +2,8 @@
 import sys,os,re,time,logging
 import requests
 
+logging.basicConfig(level=logging.INFO,format="%(asctime)s %(name)s %(levelname)s %(message)s",datefmt='%Y-%m-%d  %H:%M:%S %a')
+
 class Landslide():
     """
     landslide RESTful api
