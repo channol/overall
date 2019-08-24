@@ -4,7 +4,7 @@ import requests
 
 class Landslide():
     """
-    landslide resful api
+    landslide RESTful api
     method:get post
     action: start,stop,continue,abort
     """
