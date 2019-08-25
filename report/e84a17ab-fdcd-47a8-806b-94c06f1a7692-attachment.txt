@@ -1,0 +1,10 @@
+2019-08-25 05:44:59 [32mINFO[0m the url: http://10.133.6.19:8080/api/runningTests
+2019-08-25 05:44:59 [32mINFO[0m <Response [400]>
+2019-08-25 05:44:59 [33mWARNING[0m old test id is: 0259
+2019-08-25 05:45:04 [32mINFO[0m http://10.133.6.19:8080/api/runningTests/0259?action=abort
+2019-08-25 05:45:04 [32mINFO[0m {
+                           "code": "400",
+                           "apiCode": 404205,
+                           "reason": "Test session failed to start: Test Server 'GZ_vTS4' Phy eth1 is already reserved by test RID:0259",
+                           "url": "http://10.133.6.19:8080/api/runningTests"
+                         }
