@@ -22,7 +22,7 @@ class Landslide():
         logging.info('the url: '+rsp.url)
         if rsp.status_code == 200:
             logging.info('response is '+str(rsp.status_code))
-            #logging.info(rsp.text)
+            logging.debug(rsp.text)
             return True
         else:
             logging.error('check the url!')
@@ -44,7 +44,7 @@ class Landslide():
             return False
         elif rsp.status_code == 400:
             reason = rsp.json()['reason']
-            test_id_old = re.search('\d\d\d\d',reason,re.M).group()
+            test_id_old = re.search(r'\d{4}',reason,re.M).group()
             logging.warning('old test id is: '+test_id_old)
             time.sleep(1)
             url_abort = url+'/'+test_id_old+"?action=abort"
@@ -63,17 +63,82 @@ class Landslide():
             logging.info(rsp.text)
             return False
 
+    def case_continue(test_id,ls_user='qinglong',ls_password='casa123'):
+        session = requests.session()
+        session.auth = (ls_user,ls_password)
+        url = "http://10.133.6.19:8080/api/runningTests/"+test_id+"?action=continue"
+        rsp = session.post(url)
+        logging.info('the url: '+rsp.url)
+        logging.info(rsp)
+        if rsp.status_code != 200:
+            logging.error('check the url and session')
+            logging.error(rsp.text)
+            return False
+        else:
+            logging.info(rsp.text)
+            return True
 
+    def case_stop(test_id,ls_user='qinglong',ls_password='casa123'):
+        session = requests.session()
+        session.auth = (ls_user,ls_password)
+        url = "http://10.133.6.19:8080/api/runningTests/"+test_id+"?action=stop"
+        rsp = session.post(url)
+        logging.info('the url: '+rsp.url)
+        logging.info(rsp)
+        if rsp.status_code != 200:
+            logging.error('check the url and session')
+            logging.error(rsp.text)
+            return False
+        else:
+            logging.info(rsp.text)
+            return True
 
+    def case_abort(test_id,ls_user='qinglong',ls_password='casa123'):
+        session = requests.session()
+        session.auth = (ls_user,ls_password)
+        url = "http://10.133.6.19:8080/api/runningTests/"+test_id+"?action=abort"
+        rsp = session.post(url)
+        logging.info('the url: '+rsp.url)
+        logging.info(rsp)
+        if rsp.status_code != 200:
+            logging.error('check the url and session')
+            logging.error(rsp.text)
+            return False
+        else:
+            logging.info(rsp.text)
+            return True
 
+    def case_status(test_id,ls_user='qinglong',ls_password='casa123'):
+        session = requests.session()
+        session.auth = (ls_user,ls_password)
+        url = "http://10.133.6.19:8080/api/runningTests/"+test_id
+        rsp = session.post(url)
+        logging.info('the url: '+rsp.url)
+        logging.info(rsp)
+        if rsp.status_code == 200:
+            logging.debug(rsp.text)
+            logging.info('test id: '+str(rsp.json()['id']))
+            logging.info('\n')
+            logging.info('test CriteriaStatus: '+rsp.json()['criteriaStatus'])
+            logging.info('\n')
+            logging.info('test StateOrStep: '+rsp.json()['testStateOrStep'])
+            return True
+        else:
+            logging.error('check the url and session')
+            logging.error(rsp.text)
+            return False
 
-
-
-
-
-
-
-
-
-
-
+    def case_delete(test_id,ls_user='qinglong',ls_password='casa123'):
+        session = requests.session()
+        session.auth = (ls_user,ls_password)
+        url = "http://10.133.6.19:8080/api/runningTests/"+test_id+"?action=delete"
+        rsp = session.delete(url)
+        logging.info('the url: '+rsp.url)
+        logging.info(rsp)
+        if rsp.status_code != 200:
+            logging.error('check the url and session')
+            logging.error(rsp.text)
+            return False
+        else:
+            logging.info(rsp.text)
+            return True

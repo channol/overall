@@ -1,0 +1,181 @@
+{
+  "ue_info": {
+    "supi": "imsi-450051234000000",
+    "gpsi": "msisdn-1234567890123456",
+    "sessions": [
+      7
+    ]
+  },
+  "sess": {
+    "key": {
+      "supi": "imsi-450051234000000",
+      "pduSessionId": 7
+    },
+    "rsc": {
+      "sessIp": {
+        "addr": {
+          "Ipv4": 612371211
+        },
+        "ipaddr": "11.11.128.36",
+        "static": true
+      },
+      "pool": "IPPool|static-upf1|11.11.0.1/16",
+      "rFseid": {
+        "flag": 2,
+        "seid": 18374686479671624000,
+        "ip_addr": {
+          "Ipv4": 83951910
+        },
+        "port": 8805
+      },
+      "isDynamicPcc": true,
+      "pcfRef": "833469f9-8fc7",
+      "pcfPath": "http://stub:8080/npcf-smpolicycontrol/v1",
+      "isChargingOn": true,
+      "chfRef": "833469f9-8fc7",
+      "chfPath": "http://stub:5848/nchf-convergedcharging/v1",
+      "chfId": 5
+    },
+    "loc": {
+      "Loc": [
+        {
+          "ueLocation": {
+            "nrLocation": {
+              "tai": {
+                "plmnId": {
+                  "mcc": "450",
+                  "mnc": "05"
+                },
+                "tac": "10f050"
+              },
+              "ncgi": {
+                "plmnId": {
+                  "mcc": "450",
+                  "mnc": "05"
+                },
+                "nrCellId": "000002710"
+              }
+            }
+          }
+        }
+      ]
+    },
+    "amfInfo": {
+      "servingNfId": "amf",
+      "guami": {
+        "plmnId": {
+          "mcc": "450",
+          "mnc": "05"
+        },
+        "amfId": "010041"
+      },
+      "smContextStatusUri": "http://uemgr/namf-comm/v1/ue-contexts/imsi-450051234000000/sm-contexts/7/notify"
+    },
+    "nwInfo": {
+      "dnn": "inet1",
+      "sNssai": {
+        "sst": 1,
+        "sd": "abd001"
+      },
+      "servingNetwork": {
+        "mcc": "450",
+        "mnc": "05"
+      },
+      "anType": "3GPP_ACCESS",
+      "pduSessionType": 1,
+      "ratType": "NR",
+      "requestType": "INITIAL_REQUEST"
+    },
+    "udmInfo": {
+      "smSubsData": {
+        "pduSessionTypes": {
+          "defaultSessionType": "IPV4"
+        },
+        "sscModes": {
+          "defaultSscMode": "SSC_MODE_1"
+        },
+        "5gQosProfile": {
+          "5qi": 1,
+          "arp": {
+            "priorityLevel": 1,
+            "preemptCap": "NOT_PREEMPT",
+            "preemptVuln": "NOT_PREEMPTABLE"
+          }
+        }
+      },
+      "nfInstanceId": "",
+      "monitoredResourceUris": [
+        "/nudm-sdm/v1/imsi-450051234000000/sm-data"
+      ],
+      "subscriptionId": "2"
+    },
+    "flows": {
+      "lSeid": {
+        "flag": 2,
+        "seid": 7200819744000007
+      },
+      "upfFteid": {
+        "flag": 1,
+        "teid": 4278194800,
+        "ip_addr": {
+          "Ipv4": 638189996
+        }
+      },
+      "dlFteid": {
+        "flag": 1,
+        "teid": 1,
+        "ip_addr": {
+          "Ipv4": 470417836
+        }
+      },
+      "defUl": {
+        "pdrId": 65535,
+        "farId": 2147483647,
+        "qerIds": [
+          2147483646
+        ],
+        "qfi": 1,
+        "5qi": 1,
+        "qosRuleId": 1,
+        "sessRuleId": "SMF Static Policy"
+      },
+      "defDl": {
+        "pdrId": 65534,
+        "farId": 2147483646,
+        "qerIds": [
+          2147483645
+        ],
+        "qosRuleId": 1,
+        "sessRuleId": "SMF Static Policy"
+      },
+      "pDesicion": {
+        "sessRules": {
+          "SMF Static Policy": {
+            "authSessAmbr": {
+              "uplink": "1 Gbps",
+              "downlink": "1 Gbps"
+            },
+            "authDefQos": {
+              "5qi": 1,
+              "arp": {
+                "priorityLevel": 1,
+                "preemptCap": "NOT_PREEMPT",
+                "preemptVuln": "NOT_PREEMPTABLE"
+              },
+              "priorityLevel": 1,
+              "averWindow": 1000,
+              "maxDataBurstVol": 10000
+            },
+            "sessRuleId": "SMF Static Policy"
+          }
+        }
+      },
+      "chrgData": {
+        "invocationTimeStamp": "0001-01-01T00:00:00Z",
+        "invocationSequenceNumber": 0,
+        "invocationResult": null
+      }
+    }
+  },
+  "fsmState": "ACTIVE"
+}
