@@ -17,7 +17,7 @@ class Landslide():
     def get_ls_run(ls_user='qinglong',ls_password='casa123'):
         session = requests.session()
         session.auth = (ls_user,ls_password)
-        url = "http://10.133.6.19:8080/api/runningTests"
+        url = "http://10.133.6.19:8080/api/runningTests/"
         rsp = session.get(url)
         logging.info('the url: '+rsp.url)
         if rsp.status_code == 200:
@@ -34,7 +34,7 @@ class Landslide():
         session = requests.session()
         session.auth = (ls_user,ls_password)
         payload = { "library": library, "name": case_name}
-        url = "http://10.133.6.19:8080/api/runningTests"
+        url = "http://10.133.6.19:8080/api/runningTests/"
         rsp = session.post(url,json=payload)
         logging.info('the url: '+rsp.url)
         logging.info(rsp)
@@ -47,12 +47,36 @@ class Landslide():
             test_id_old = re.search(r'\d{4}',reason,re.M).group()
             logging.warning('old test id is: '+test_id_old)
             time.sleep(1)
-            url_abort = url+'/'+test_id_old+"?action=abort"
-            rsp_abort = session.post(url_abort)
-            time.sleep(3)
-            logging.info(rsp_abort.url)
-            logging.info(rsp.text)
-            return False
+            url_check = "http://10.133.6.19:8080/api/runningTests/"+test_id_old
+            rsp_check = session.get(url_check)
+            if rsp_check.status_code == 200:
+                state = rsp_check.json()['testStateOrStep']
+                if state == 'COMPLETE':
+                    url_del = "http://10.133.6.19:8080/api/runningTests/"+test_id_old+"?action=delete"
+                    rsp_del = session.delete(url_del)
+                    if rsp_del.status_code == 200:
+                        logging.error('delete the old test')
+                        logging.error(rsp_del.text)
+                        return False
+                    else:
+                        logging.error(rsp_del.text)
+                        return False
+                elif state == '5_Waiting':
+                    url_abort = "http://10.133.6.19:8080/api/runningTests/"+test_id_old+"?action=abort"
+                    rsp_abort = session.post(url_abort)
+                    if rsp_abort.status_code == 200:
+                        logging.error('abort the old test')
+                        logging.error(rsp_abort.text)
+                        return False
+                    else:
+                        logging.error(rsp_abort.text)
+                        return False
+                else:
+                    logging.error(rsp_check.text)
+                    return False
+            else:
+                logging.error(rsp_check.text)
+                return False
         elif rsp.status_code == 201:
             logging.info(rsp.text)
             test_id = rsp.json()['id']
@@ -108,7 +132,7 @@ class Landslide():
             logging.info(rsp.text)
             return True
 
-    def case_status(test_id,ls_user='qinglong',ls_password='casa123'):
+    def case_state(test_id,ls_user='qinglong',ls_password='casa123'):
         session = requests.session()
         session.auth = (ls_user,ls_password)
         url = "http://10.133.6.19:8080/api/runningTests/"+test_id
@@ -122,7 +146,8 @@ class Landslide():
             logging.info('test CriteriaStatus: '+rsp.json()['criteriaStatus'])
             logging.info('\n')
             logging.info('test StateOrStep: '+rsp.json()['testStateOrStep'])
-            return True
+            state = rsp.jso()['testStateOrStep']
+            return state
         else:
             logging.error('check the url and session')
             logging.error(rsp.text)

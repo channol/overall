@@ -1,13 +1,45 @@
-INFO     root:test_01.py:76 spend time: 0.00017952919006347656
-INFO     root:landslide.py:39 the url: http://10.133.6.19:8080/api/runningTests
-INFO     root:landslide.py:40 <Response [400]>
-WARNING  root:landslide.py:48 old test id is: 0259
-INFO     root:landslide.py:53 http://10.133.6.19:8080/api/runningTests/0259?action=abort
-INFO     root:landslide.py:54 {
-  "code": "400",
-  "apiCode": 404205,
-  "reason": "Test session failed to start: Test Server 'GZ_vTS4' Phy eth1 is already reserved by test RID:0259",
-  "url": "http://10.133.6.19:8080/api/runningTests"
+INFO     root:2del.py:76 spend time: 1.1920928955078125e-06
+INFO     root:landslide.py:161 the url: http://10.133.6.19:8080/api/runningTests/263?action=delete
+INFO     root:landslide.py:162 <Response [200]>
+INFO     root:landslide.py:168 {
+   "result": "Running test session object deleted",
+   "url": "http://10.133.6.19:8080/api/runningTests/263",
+   "measurementsUrl": "http://10.133.6.19:8080/api/runningTests/263/measurements",
+   "criteriaUrl": "http://10.133.6.19:8080/api/runningTests/263/criteria",
+   "perSessionReportStatusUrl": "http://10.133.6.19:8080/api/runningTests/263/persessionreportstatus",
+   "noteToUser": "Be sure to HTTP-DELETE this RESTful API controlled resource when done",
+   "id": 263,
+   "library": 10828,
+   "name": "case_001_pdu_establishment",
+   "user": "qinglong",
+   "criteriaStatus": "PASSED",
+   "testStateOrStep": "COMPLETE",
+   "resultFilesList": [
+      "http://10.133.6.19/results/qinglong/19-08-25_21.23.29__RID-263__case_001_pdu_establishment.log.txt",
+      "http://10.133.6.19/results/qinglong/19-08-25_21.23.29__RID-263__case_001_pdu_establishment.xls",
+      "http://10.133.6.19/results/qinglong/19-08-25_21.23.29__RID-263__ts0_eth1_capture.pcap"
+    ]
 }
 
-INFO     root:test_01.py:25 smf ip: 172.24.14.11
+INFO     root:landslide.py:161 the url: http://10.133.6.19:8080/api/runningTests/271?action=delete
+INFO     root:landslide.py:162 <Response [200]>
+INFO     root:landslide.py:168 {
+   "result": "Running test session object deleted",
+   "url": "http://10.133.6.19:8080/api/runningTests/271",
+   "measurementsUrl": "http://10.133.6.19:8080/api/runningTests/271/measurements",
+   "criteriaUrl": "http://10.133.6.19:8080/api/runningTests/271/criteria",
+   "perSessionReportStatusUrl": "http://10.133.6.19:8080/api/runningTests/271/persessionreportstatus",
+   "noteToUser": "Be sure to HTTP-DELETE this RESTful API controlled resource when done",
+   "id": 271,
+   "library": 10828,
+   "name": "case_001_pdu_establishment",
+   "user": "qinglong",
+   "criteriaStatus": "FAILED",
+   "testStateOrStep": "COMPLETE",
+   "resultFilesList": [
+      "http://10.133.6.19/results/qinglong/19-08-25_21.59.42__RID-271__case_001_pdu_establishment.log.txt",
+      "http://10.133.6.19/results/qinglong/19-08-25_21.59.42__RID-271__case_001_pdu_establishment.xls",
+      "http://10.133.6.19/results/qinglong/19-08-25_21.59.42__RID-271__ts0_eth1_capture.pcap"
+    ]
+}
+

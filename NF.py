@@ -10,7 +10,7 @@ class NF():
     method:get post delete
     NF: smf,upf,docker
     """
-    def __init__(self,container):
+    def __init__(self,container,smf_ip,supi,pdu_id):
         self.container = container
         self.smf_ip = smf_ip
         self.supi = supi
