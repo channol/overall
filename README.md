@@ -10,3 +10,6 @@
 
 # pytest.ini
 配置pytest运行参数
+
+# NF.py
+定义关于Network function 网元相关函数
