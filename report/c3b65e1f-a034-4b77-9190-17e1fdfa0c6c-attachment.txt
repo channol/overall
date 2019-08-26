@@ -1,0 +1,94 @@
+2019-08-26 02:04:53 [32mINFO[0m show upf session ue-ip 11.11.18.248 far
+                         -----Node = 0  TM = 0  session seid = 0xff00000000000004 total fars = 2 -----
+                             --- far_count : 1 ---
+                               far_id       : 2147483646(0x7ffffffe)
+                               apply_action : forward
+                               fwd_param    : 
+                                 dest_iface      : access
+                                 ohdr_creation   : 
+                                     description : GTP-U/UDP/IPV4
+                                     teid        : 0x00000001
+                                     ip addr     : 172.1.10.28
+                                     port        : 2152
+                             --- far_count : 2 ---
+                               far_id       : 2147483647(0x7fffffff)
+                               apply_action : forward
+                               fwd_param    : 
+                                 dest_iface      : core
+                         
+                         Total sessions: 1
+2019-08-26 02:04:56 [32mINFO[0m show upf session ue-ip 11.11.18.248 qer
+                         -----Node = 0  TM = 0  session seid = 0xff00000000000004 total qers = 2 -----
+                              --- qer_count : 1 ---
+                             qer_id         : 2147483646(0x7ffffffe)
+                             ul gate        : open
+                             dl gate        : closed
+                             tos            : 0
+                             mask           : 0
+                             ul mbr         : 1000000
+                             ul stats allow pkts : 0
+                             ul stats allow bytes: 0
+                             ul stats drop  pkts : 0
+                             ul stats drop  bytes: 0
+                             dl stats allow pkts : 0
+                             dl stats allow bytes: 0
+                             dl stats drop  pkts : 0
+                             dl stats drop  bytes: 0
+                              --- qer_count : 2 ---
+                             qer_id         : 2147483645(0x7ffffffd)
+                             ul gate        : closed
+                             dl gate        : open
+                             tos            : 0
+                             mask           : 0
+                             qfi            : 1
+                             dl mbr         : 1000000
+                             ul stats allow pkts : 0
+                             ul stats allow bytes: 0
+                             ul stats drop  pkts : 0
+                             ul stats drop  bytes: 0
+                             dl stats allow pkts : 0
+                             dl stats allow bytes: 0
+                             dl stats drop  pkts : 0
+                             dl stats drop  bytes: 0
+                         
+                         Total sessions: 1
+2019-08-26 02:04:59 [32mINFO[0m show upf session ue-ip 11.11.18.248 pdr
+                         -----Node = 0  TM = 0  session seid = 0xff00000000000004 total pdrs = 2 -----
+                             ---- pdr count : 1 ----
+                               pdr id          : 65534(0xfffe)
+                               precedence      : 4294967294(0xfffffffe)
+                               far id          : 2147483646(0x7ffffffe)
+                               qer id          : 2147483645(0x7ffffffd)
+                               pkts count      : 0
+                               bytes count     : 0
+                             ---- pdi infomation ----
+                               src iface       : core
+                               ue ipv4 address : 11.11.18.248            
+                             ---- sdf filter count: 1 ----
+                               protocol        : any
+                               local_port      : any
+                               remote_port     : any
+                               remote_ip       : any
+                             ---- pdr count : 2 ----
+                               pdr id          : 65535(0xffff)
+                               precedence      : 4294967295(0xffffffff)
+                               far id          : 2147483647(0x7fffffff)
+                               qer id          : 2147483646(0x7ffffffe)
+                               ohdr removal    : GTP V4
+                               pkts count      : 0
+                               bytes count     : 0
+                             ---- pdi infomation ----
+                               src iface       : access
+                               local teid      : 0xff001bc0
+                               local ipv4 addr : 172.0.5.38              
+                               qfi             : 1
+                               ue ipv4 address : 11.11.18.248            
+                             ---- sdf filter count: 1 ----
+                               protocol        : any
+                               local_port      : any
+                               remote_port     : any
+                               remote_ip       : any
+                         
+                         Total sessions: 1
+2019-08-26 02:05:02 [32mINFO[0m show upf session ue-ip 11.11.18.248 urr
+                         Total sessions: 0

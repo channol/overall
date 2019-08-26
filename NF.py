@@ -50,7 +50,7 @@ class NF():
         headers = {"Accept": "application/json","Content-type": "application/json"}
         rsp = requests.delete(url,headers=headers)
         logging.info(rsp.url)
-        if r.status_code == 200:
+        if rsp.status_code == 200:
             logging.info('smf delete session successful!')
             logging.info(rsp.text)
             return True

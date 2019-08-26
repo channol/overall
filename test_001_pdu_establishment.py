@@ -7,8 +7,8 @@ from NF import *
 
 a = time.time()
 
-#def test_capture_start():
-#    capture_start()
+def test_start():
+    capture_start()
 
 #def test_get_ls_run():
 #    Landslide.get_ls_run()
@@ -58,19 +58,33 @@ def test_upf_session_rule(child_upf,ue_ip):
             NF.upf_session_rule(child_upf,ue_ip,rule)
     NF.upf_close(child_upf)
 
-#def test_landslide_case_continue(get_test_id):
-#    Landslide.case_continue(get_test_id)
+def test_landslide_case_continue(get_test_id):
+    if get_test_id:
+        for i in range(10):
+            ls = Landslide.case_state(get_test_id)
+            if ls == '5_Waiting':
+                ls = Landslide.case_continue(get_test_id)
+                if ls:
+                    break
+                time.sleep(10)
+    else:
+        return False
 
-#time.sleep(30)
-#def test_landslide_case_delete(get_test_id):
-#    Landslide.case_delete(get_test_id)
+def test_landslide_case_delete(get_test_id):
+    if get_test_id:
+        for i in range(10):
+            ls = Landslide.case_state(get_test_id)
+            if ls == 'COMPLETE':
+                ls = Landslide.case_delete(get_test_id)
+                if ls:
+                    break
+                time.sleep(10)
+    else:
+        return False
 
 #############################################################
 
-#def test_capture_stop():
-#    capture_stop()
-
-#def test_get_log():
-#    get_log()
-
+def test_stop():
+    capture_stop()
+    get_log()
 logging.info('spend time: '+str(time.time()-a))

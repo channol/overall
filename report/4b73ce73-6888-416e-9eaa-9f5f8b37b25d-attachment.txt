@@ -1,0 +1,18 @@
+2019-08-26 02:03:38 [32mINFO[0m post the url: http://10.133.6.19:8080/api/runningTests/
+2019-08-26 02:03:38 [32mINFO[0m <Response [400]>
+2019-08-26 02:03:38 [33mWARNING[0m old test id is: 0293
+2019-08-26 02:03:39 [1m[31mERROR[0m abort the old test
+2019-08-26 02:03:39 [1m[31mERROR[0m {
+                             "result": "Command successful",
+                             "url": "http://10.133.6.19:8080/api/runningTests/293",
+                             "measurementsUrl": "http://10.133.6.19:8080/api/runningTests/293/measurements",
+                             "criteriaUrl": "http://10.133.6.19:8080/api/runningTests/293/criteria",
+                             "perSessionReportStatusUrl": "http://10.133.6.19:8080/api/runningTests/293/persessionreportstatus",
+                             "noteToUser": "Be sure to HTTP-DELETE this RESTful API controlled resource when done",
+                             "id": 293,
+                             "library": 10828,
+                             "name": "case_001_pdu_establishment",
+                             "user": "qinglong",
+                             "criteriaStatus": "PASSED",
+                             "testStateOrStep": "CLEANUP"
+                          }

@@ -1,0 +1,7 @@
+2019-08-26 01:59:07 [32mINFO[0m get the url: http://10.133.6.19:8080/api/runningTests/293
+2019-08-26 01:59:07 [32mINFO[0m <Response [200]>
+2019-08-26 01:59:07 [32mINFO[0m test id: 293
+2019-08-26 01:59:07 [32mINFO[0m 
+2019-08-26 01:59:07 [32mINFO[0m test CriteriaStatus: PASSED
+2019-08-26 01:59:07 [32mINFO[0m 
+2019-08-26 01:59:07 [32mINFO[0m test StateOrStep: 5_Waiting
