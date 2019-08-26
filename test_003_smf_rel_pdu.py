@@ -9,9 +9,6 @@ a = time.time()
 
 def test_start():
     capture_start()
-
-#def test_get_ls_run():
-#    Landslide.get_ls_run()
 #############################################################
 @pytest.fixture(scope = 'module')
 def get_test_id():
@@ -55,8 +52,17 @@ def test_upf_session_rule(child_upf,ue_ip):
         rules = ['far','qer','pdr','urr']
         for rule in rules:
             NF.upf_session_rule(child_upf,ue_ip,rule)
-    NF.upf_close(child_upf)
 
+def test_smf_del_session(smf_ip):
+    ls = NF.smf_del_session(smf_ip,get_parameter('supi'),get_parameter('pdu_id')
+    assert ls
+
+def test_upf_session_rule_del(child_upf,ue_ip):
+    if ue_ip:
+        rules = ['far','qer','pdr','urr']
+        for rule in rules:
+            NF.upf_session_rule(child_upf,ue_ip,rule)
+#############################################################
 def test_landslide_case_continue(get_test_id):
     if get_test_id:
         for i in range(10):
@@ -83,5 +89,6 @@ def test_landslide_case_delete(get_test_id):
 #############################################################
 def test_stop():
     capture_stop()
+    NF.upf_close(child_upf)
     get_log()
 logging.info('spend time: '+str(time.time()-a))
