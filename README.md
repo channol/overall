@@ -37,6 +37,24 @@ Java HotSpot(TM) 64-Bit Server VM (build 25.161-b12, mixed mode)
 ```
 ## pytest 安装
 ```
-pip3 install pytest
+pip3 install -U pytest
 ```
-
+## pytest allure插件安装
+```
+pip3 install allure-pytest
+```  
+## jdk 1.8+安装
+- 下载jdk软件，jdk-8u161-linux-x64.tar.gz
+- 复制到/opt，解压： `tar -zxvf jdk-8u161-linux-x64.tar.gz`  
+- 创建软连接： `ln -snf /opt/jdk1.8.0_161 /opt/jdk`  
+- 环境变量配置/etc/profile  
+```
+export JAVA_HOME=/opt/jdk
+export JRE_HOME=$JAVA_HOME/jre
+export CLASSPATH=.:$JAVA_HOME/lib
+export PATH=$PATH:$JAVA_HOME/bin
+```
+- 应用配置： `source /etc/profile`  
+## Allure Commandline安装
+- 解压: `unzip allure-commandline-2.12.1.zip`
+- 直接调用（可优化）： `/root/allure-2.12.1/bin/allure'
