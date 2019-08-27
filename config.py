@@ -42,3 +42,4 @@ def get_log():
         logging.info('scp root@172.0.5.27:'+cap_file+' .')
     else:
         logging.warning('The capture file is not exist!')
+    os.chdir('/root/overall/')

@@ -5,7 +5,7 @@ from landslide import *
 from config import *
 from NF import *
 
-a = time.time()
+#a = time.time()
 
 def test_start():
     capture_start()
@@ -93,4 +93,5 @@ def test_landslide_case_delete(get_test_id):
 def test_stop():
     capture_stop()
     get_log()
-logging.info('spend time: '+str(time.time()-a))
+    time.sleep(3)
+#logging.info('spend time: '+str(time.time()-a))

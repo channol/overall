@@ -1,0 +1,93 @@
+2019-08-27 03:25:05 [32mINFO[0m try delete landslide case times: 0
+2019-08-27 03:25:05 [32mINFO[0m get the url: http://10.133.6.19:8080/api/runningTests/417
+2019-08-27 03:25:05 [32mINFO[0m <Response [200]>
+2019-08-27 03:25:05 [32mINFO[0m test id: 417
+2019-08-27 03:25:05 [32mINFO[0m 
+2019-08-27 03:25:05 [32mINFO[0m test CriteriaStatus: PASSED
+2019-08-27 03:25:05 [32mINFO[0m 
+2019-08-27 03:25:05 [32mINFO[0m test StateOrStep: 7
+2019-08-27 03:25:15 [32mINFO[0m try delete landslide case times: 1
+2019-08-27 03:25:15 [32mINFO[0m get the url: http://10.133.6.19:8080/api/runningTests/417
+2019-08-27 03:25:15 [32mINFO[0m <Response [200]>
+2019-08-27 03:25:15 [32mINFO[0m test id: 417
+2019-08-27 03:25:15 [32mINFO[0m 
+2019-08-27 03:25:15 [32mINFO[0m test CriteriaStatus: PASSED
+2019-08-27 03:25:15 [32mINFO[0m 
+2019-08-27 03:25:15 [32mINFO[0m test StateOrStep: 7
+2019-08-27 03:25:26 [32mINFO[0m try delete landslide case times: 2
+2019-08-27 03:25:26 [32mINFO[0m get the url: http://10.133.6.19:8080/api/runningTests/417
+2019-08-27 03:25:26 [32mINFO[0m <Response [200]>
+2019-08-27 03:25:26 [32mINFO[0m test id: 417
+2019-08-27 03:25:26 [32mINFO[0m 
+2019-08-27 03:25:26 [32mINFO[0m test CriteriaStatus: PASSED
+2019-08-27 03:25:26 [32mINFO[0m 
+2019-08-27 03:25:26 [32mINFO[0m test StateOrStep: 7
+2019-08-27 03:25:36 [32mINFO[0m try delete landslide case times: 3
+2019-08-27 03:25:36 [32mINFO[0m get the url: http://10.133.6.19:8080/api/runningTests/417
+2019-08-27 03:25:36 [32mINFO[0m <Response [200]>
+2019-08-27 03:25:36 [32mINFO[0m test id: 417
+2019-08-27 03:25:36 [32mINFO[0m 
+2019-08-27 03:25:36 [32mINFO[0m test CriteriaStatus: PASSED
+2019-08-27 03:25:36 [32mINFO[0m 
+2019-08-27 03:25:36 [32mINFO[0m test StateOrStep: 7
+2019-08-27 03:25:46 [32mINFO[0m try delete landslide case times: 4
+2019-08-27 03:25:47 [32mINFO[0m get the url: http://10.133.6.19:8080/api/runningTests/417
+2019-08-27 03:25:47 [32mINFO[0m <Response [200]>
+2019-08-27 03:25:47 [32mINFO[0m test id: 417
+2019-08-27 03:25:47 [32mINFO[0m 
+2019-08-27 03:25:47 [32mINFO[0m test CriteriaStatus: PASSED
+2019-08-27 03:25:47 [32mINFO[0m 
+2019-08-27 03:25:47 [32mINFO[0m test StateOrStep: 7
+2019-08-27 03:25:57 [32mINFO[0m try delete landslide case times: 5
+2019-08-27 03:25:57 [32mINFO[0m get the url: http://10.133.6.19:8080/api/runningTests/417
+2019-08-27 03:25:57 [32mINFO[0m <Response [200]>
+2019-08-27 03:25:57 [32mINFO[0m test id: 417
+2019-08-27 03:25:57 [32mINFO[0m 
+2019-08-27 03:25:57 [32mINFO[0m test CriteriaStatus: PASSED
+2019-08-27 03:25:57 [32mINFO[0m 
+2019-08-27 03:25:57 [32mINFO[0m test StateOrStep: 7
+2019-08-27 03:26:07 [32mINFO[0m try delete landslide case times: 6
+2019-08-27 03:26:08 [32mINFO[0m get the url: http://10.133.6.19:8080/api/runningTests/417
+2019-08-27 03:26:08 [32mINFO[0m <Response [200]>
+2019-08-27 03:26:08 [32mINFO[0m test id: 417
+2019-08-27 03:26:08 [32mINFO[0m 
+2019-08-27 03:26:08 [32mINFO[0m test CriteriaStatus: PASSED
+2019-08-27 03:26:08 [32mINFO[0m 
+2019-08-27 03:26:08 [32mINFO[0m test StateOrStep: 8
+2019-08-27 03:26:18 [32mINFO[0m try delete landslide case times: 7
+2019-08-27 03:26:18 [32mINFO[0m get the url: http://10.133.6.19:8080/api/runningTests/417
+2019-08-27 03:26:18 [32mINFO[0m <Response [200]>
+2019-08-27 03:26:18 [32mINFO[0m test id: 417
+2019-08-27 03:26:18 [32mINFO[0m 
+2019-08-27 03:26:18 [32mINFO[0m test CriteriaStatus: PASSED
+2019-08-27 03:26:18 [32mINFO[0m 
+2019-08-27 03:26:18 [32mINFO[0m test StateOrStep: WAIT_FOR_TRANSFERS
+2019-08-27 03:26:28 [32mINFO[0m try delete landslide case times: 8
+2019-08-27 03:26:29 [32mINFO[0m get the url: http://10.133.6.19:8080/api/runningTests/417
+2019-08-27 03:26:29 [32mINFO[0m <Response [200]>
+2019-08-27 03:26:29 [32mINFO[0m test id: 417
+2019-08-27 03:26:29 [32mINFO[0m 
+2019-08-27 03:26:29 [32mINFO[0m test CriteriaStatus: PASSED
+2019-08-27 03:26:29 [32mINFO[0m 
+2019-08-27 03:26:29 [32mINFO[0m test StateOrStep: COMPLETE
+2019-08-27 03:26:29 [32mINFO[0m delete the url: http://10.133.6.19:8080/api/runningTests/417?action=delete
+2019-08-27 03:26:29 [32mINFO[0m <Response [200]>
+2019-08-27 03:26:29 [32mINFO[0m {
+                            "result": "Running test session object deleted",
+                            "url": "http://10.133.6.19:8080/api/runningTests/417",
+                            "measurementsUrl": "http://10.133.6.19:8080/api/runningTests/417/measurements",
+                            "criteriaUrl": "http://10.133.6.19:8080/api/runningTests/417/criteria",
+                            "perSessionReportStatusUrl": "http://10.133.6.19:8080/api/runningTests/417/persessionreportstatus",
+                            "noteToUser": "Be sure to HTTP-DELETE this RESTful API controlled resource when done",
+                            "id": 417,
+                            "library": 10828,
+                            "name": "case_001_pdu_establishment",
+                            "user": "qinglong",
+                            "criteriaStatus": "PASSED",
+                            "testStateOrStep": "COMPLETE",
+                            "resultFilesList": [
+                               "http://10.133.6.19/results/qinglong/19-08-27_02.24.13__RID-417__case_001_pdu_establishment.log.txt",
+                               "http://10.133.6.19/results/qinglong/19-08-27_02.24.13__RID-417__case_001_pdu_establishment.xls",
+                               "http://10.133.6.19/results/qinglong/19-08-27_02.24.13__RID-417__ts0_eth1_capture.pcap"
+                             ]
+                         }
