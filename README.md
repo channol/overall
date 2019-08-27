@@ -1,4 +1,4 @@
-# overall 
+# overall概述
 学习使用pytest+allure自动化框架来测试5GC
 
 # 文件说明   
@@ -58,3 +58,6 @@ export PATH=$PATH:$JAVA_HOME/bin
 ## Allure Commandline安装
 - 解压: `unzip allure-commandline-2.12.1.zip`
 - 直接调用（可优化）： `/root/allure-2.12.1/bin/allure'
+
+# 效果图
+
