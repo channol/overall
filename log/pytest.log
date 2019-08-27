@@ -1,148 +1,52 @@
-INFO     root:test_001_pdu_establishment.py:87 spend time: 0.00012731552124023438
+INFO     root:test_003_smf_rel_pdu.py:99 spend time: 0.00010466575622558594
 INFO     root:config.py:19 ===start to capture===
 INFO     root:landslide.py:39 post the url: http://10.133.6.19:8080/api/runningTests/
 INFO     root:landslide.py:40 <Response [201]>
 INFO     root:landslide.py:91 {
-   "url": "http://10.133.6.19:8080/api/runningTests/377",
-   "id": "377",
+   "url": "http://10.133.6.19:8080/api/runningTests/411",
+   "id": "411",
    "library": 10828,
    "name": "case_001_pdu_establishment",
    "user": "qinglong",
    "testStateOrStep": "INIT"
 }
 
-INFO     root:landslide.py:93 test id is : 377
-INFO     root:test_001_pdu_establishment.py:24 smf ip: 172.24.14.11
-INFO     root:test_001_pdu_establishment.py:37 try get ue ip times: 0
+INFO     root:landslide.py:93 test id is : 411
+INFO     root:test_003_smf_rel_pdu.py:24 smf ip: 172.24.14.11
+INFO     root:test_003_smf_rel_pdu.py:37 try get ue ip times: 0
 INFO     root:NF.py:33 http://172.24.14.11:80/mgmt/v1/session/imsi-450051234000000/7
-ERROR    root:NF.py:44 get smf ue session failure!
-ERROR    root:NF.py:45 
-INFO     root:test_001_pdu_establishment.py:37 try get ue ip times: 1
-INFO     root:NF.py:33 http://172.24.14.11:80/mgmt/v1/session/imsi-450051234000000/7
-ERROR    root:NF.py:44 get smf ue session failure!
-ERROR    root:NF.py:45 
-INFO     root:test_001_pdu_establishment.py:37 try get ue ip times: 2
-INFO     root:NF.py:33 http://172.24.14.11:80/mgmt/v1/session/imsi-450051234000000/7
-INFO     root:NF.py:39 ue ip: 11.11.226.1
-INFO     root:NF.py:41 fsmState: ACTIVE
-INFO     root:test_001_pdu_establishment.py:42 ue ip: 11.11.226.1
-INFO     root:NF.py:99 show upf session ue-ip 11.11.226.1 far
------Node = 0  TM = 0  session seid = 0xff00000000000007 total fars = 2 -----
-    --- far_count : 1 ---
-      far_id       : 2147483646(0x7ffffffe)
-      apply_action : forward
-      fwd_param    : 
-        dest_iface      : access
-        ohdr_creation   : 
-            description : GTP-U/UDP/IPV4
-            teid        : 0x00000001
-            ip addr     : 172.1.10.28
-            port        : 2152
-    --- far_count : 2 ---
-      far_id       : 2147483647(0x7fffffff)
-      apply_action : forward
-      fwd_param    : 
-        dest_iface      : core
+INFO     root:NF.py:39 ue ip: 5.5.0.125
+INFO     root:NF.py:41 fsmState: PENDING
+INFO     root:test_003_smf_rel_pdu.py:42 ue ip: 5.5.0.125
+ERROR    root:NF.py:96 UPF can not find the session
+INFO     root:NF.py:99 
 
-Total sessions: 1
+ERROR    root:NF.py:96 UPF can not find the session
+INFO     root:NF.py:99 
 
-INFO     root:NF.py:99 show upf session ue-ip 11.11.226.1 qer
------Node = 0  TM = 0  session seid = 0xff00000000000007 total qers = 2 -----
-     --- qer_count : 1 ---
-    qer_id         : 2147483646(0x7ffffffe)
-    ul gate        : open
-    dl gate        : closed
-    tos            : 0
-    mask           : 0
-    ul mbr         : 1000000
-    ul stats allow pkts : 0
-    ul stats allow bytes: 0
-    ul stats drop  pkts : 0
-    ul stats drop  bytes: 0
-    dl stats allow pkts : 0
-    dl stats allow bytes: 0
-    dl stats drop  pkts : 0
-    dl stats drop  bytes: 0
-     --- qer_count : 2 ---
-    qer_id         : 2147483645(0x7ffffffd)
-    ul gate        : closed
-    dl gate        : open
-    tos            : 0
-    mask           : 0
-    qfi            : 1
-    dl mbr         : 1000000
-    ul stats allow pkts : 0
-    ul stats allow bytes: 0
-    ul stats drop  pkts : 0
-    ul stats drop  bytes: 0
-    dl stats allow pkts : 0
-    dl stats allow bytes: 0
-    dl stats drop  pkts : 0
-    dl stats drop  bytes: 0
-
-Total sessions: 1
-
-INFO     root:NF.py:99 show upf session ue-ip 11.11.226.1 pdr
------Node = 0  TM = 0  session seid = 0xff00000000000007 total pdrs = 2 -----
-    ---- pdr count : 1 ----
-      pdr id          : 65534(0xfffe)
-      precedence      : 4294967294(0xfffffffe)
-      far id          : 2147483646(0x7ffffffe)
-      qer id          : 2147483645(0x7ffffffd)
-      pkts count      : 0
-      bytes count     : 0
-    ---- pdi infomation ----
-      src iface       : core
-      ue ipv4 address : 11.11.226.1             
-    ---- sdf filter count: 1 ----
-      protocol        : any
-      local_port      : any
-      remote_port     : any
-      remote_ip       : any
-    ---- pdr count : 2 ----
-      pdr id          : 65535(0xffff)
-      precedence      : 4294967295(0xffffffff)
-      far id          : 2147483647(0x7fffffff)
-      qer id          : 2147483646(0x7ffffffe)
-      ohdr removal    : GTP V4
-      pkts count      : 0
-      bytes count     : 0
-    ---- pdi infomation ----
-      src iface       : access
-      local teid      : 0xff001bf0
-      local ipv4 addr : 172.0.5.38              
-      qfi             : 1
-      ue ipv4 address : 11.11.226.1             
-    ---- sdf filter count: 1 ----
-      protocol        : any
-      local_port      : any
-      remote_port     : any
-      remote_ip       : any
-
-Total sessions: 1
-
-INFO     root:NF.py:99 show upf session ue-ip 11.11.226.1 urr
-Total sessions: 0
-
-INFO     root:landslide.py:150 get the url: http://10.133.6.19:8080/api/runningTests/377
+INFO     root:NF.py:52 http://172.24.14.11:80/mgmt/v1/session/imsi-450051234000000/7
+INFO     root:NF.py:54 smf delete session successful!
+INFO     root:NF.py:55 
+INFO     root:test_003_smf_rel_pdu.py:69 try continue landslide case times: 0
+INFO     root:landslide.py:150 get the url: http://10.133.6.19:8080/api/runningTests/411
 INFO     root:landslide.py:151 <Response [200]>
-INFO     root:landslide.py:154 test id: 377
+INFO     root:landslide.py:154 test id: 411
 INFO     root:landslide.py:155 
 
 INFO     root:landslide.py:156 test CriteriaStatus: PASSED
 INFO     root:landslide.py:157 
 
 INFO     root:landslide.py:158 test StateOrStep: 5_Waiting
-INFO     root:landslide.py:105 post the url: http://10.133.6.19:8080/api/runningTests/377?action=continue
+INFO     root:landslide.py:105 post the url: http://10.133.6.19:8080/api/runningTests/411?action=continue
 INFO     root:landslide.py:106 <Response [200]>
 INFO     root:landslide.py:112 {
    "result": "Command successful",
-   "url": "http://10.133.6.19:8080/api/runningTests/377",
-   "measurementsUrl": "http://10.133.6.19:8080/api/runningTests/377/measurements",
-   "criteriaUrl": "http://10.133.6.19:8080/api/runningTests/377/criteria",
-   "perSessionReportStatusUrl": "http://10.133.6.19:8080/api/runningTests/377/persessionreportstatus",
+   "url": "http://10.133.6.19:8080/api/runningTests/411",
+   "measurementsUrl": "http://10.133.6.19:8080/api/runningTests/411/measurements",
+   "criteriaUrl": "http://10.133.6.19:8080/api/runningTests/411/criteria",
+   "perSessionReportStatusUrl": "http://10.133.6.19:8080/api/runningTests/411/persessionreportstatus",
    "noteToUser": "Be sure to HTTP-DELETE this RESTful API controlled resource when done",
-   "id": 377,
+   "id": 411,
    "library": 10828,
    "name": "case_001_pdu_establishment",
    "user": "qinglong",
@@ -150,99 +54,109 @@ INFO     root:landslide.py:112 {
    "testStateOrStep": "5_Waiting"
 }
 
-INFO     root:landslide.py:150 get the url: http://10.133.6.19:8080/api/runningTests/377
+INFO     root:test_003_smf_rel_pdu.py:84 try delete landslide case times: 0
+INFO     root:landslide.py:150 get the url: http://10.133.6.19:8080/api/runningTests/411
 INFO     root:landslide.py:151 <Response [200]>
-INFO     root:landslide.py:154 test id: 377
+INFO     root:landslide.py:154 test id: 411
 INFO     root:landslide.py:155 
 
 INFO     root:landslide.py:156 test CriteriaStatus: PASSED
 INFO     root:landslide.py:157 
 
-INFO     root:landslide.py:158 test StateOrStep: 7
-INFO     root:landslide.py:150 get the url: http://10.133.6.19:8080/api/runningTests/377
+INFO     root:landslide.py:158 test StateOrStep: 6
+INFO     root:test_003_smf_rel_pdu.py:84 try delete landslide case times: 1
+INFO     root:landslide.py:150 get the url: http://10.133.6.19:8080/api/runningTests/411
 INFO     root:landslide.py:151 <Response [200]>
-INFO     root:landslide.py:154 test id: 377
+INFO     root:landslide.py:154 test id: 411
 INFO     root:landslide.py:155 
 
 INFO     root:landslide.py:156 test CriteriaStatus: PASSED
 INFO     root:landslide.py:157 
 
-INFO     root:landslide.py:158 test StateOrStep: 7
-INFO     root:landslide.py:150 get the url: http://10.133.6.19:8080/api/runningTests/377
+INFO     root:landslide.py:158 test StateOrStep: 6
+INFO     root:test_003_smf_rel_pdu.py:84 try delete landslide case times: 2
+INFO     root:landslide.py:150 get the url: http://10.133.6.19:8080/api/runningTests/411
 INFO     root:landslide.py:151 <Response [200]>
-INFO     root:landslide.py:154 test id: 377
+INFO     root:landslide.py:154 test id: 411
 INFO     root:landslide.py:155 
 
 INFO     root:landslide.py:156 test CriteriaStatus: PASSED
 INFO     root:landslide.py:157 
 
-INFO     root:landslide.py:158 test StateOrStep: 7
-INFO     root:landslide.py:150 get the url: http://10.133.6.19:8080/api/runningTests/377
+INFO     root:landslide.py:158 test StateOrStep: 6
+INFO     root:test_003_smf_rel_pdu.py:84 try delete landslide case times: 3
+INFO     root:landslide.py:150 get the url: http://10.133.6.19:8080/api/runningTests/411
 INFO     root:landslide.py:151 <Response [200]>
-INFO     root:landslide.py:154 test id: 377
+INFO     root:landslide.py:154 test id: 411
 INFO     root:landslide.py:155 
 
 INFO     root:landslide.py:156 test CriteriaStatus: PASSED
 INFO     root:landslide.py:157 
 
-INFO     root:landslide.py:158 test StateOrStep: 7
-INFO     root:landslide.py:150 get the url: http://10.133.6.19:8080/api/runningTests/377
+INFO     root:landslide.py:158 test StateOrStep: 6
+INFO     root:test_003_smf_rel_pdu.py:84 try delete landslide case times: 4
+INFO     root:landslide.py:150 get the url: http://10.133.6.19:8080/api/runningTests/411
 INFO     root:landslide.py:151 <Response [200]>
-INFO     root:landslide.py:154 test id: 377
+INFO     root:landslide.py:154 test id: 411
 INFO     root:landslide.py:155 
 
 INFO     root:landslide.py:156 test CriteriaStatus: PASSED
 INFO     root:landslide.py:157 
 
-INFO     root:landslide.py:158 test StateOrStep: 7
-INFO     root:landslide.py:150 get the url: http://10.133.6.19:8080/api/runningTests/377
+INFO     root:landslide.py:158 test StateOrStep: 6
+INFO     root:test_003_smf_rel_pdu.py:84 try delete landslide case times: 5
+INFO     root:landslide.py:150 get the url: http://10.133.6.19:8080/api/runningTests/411
 INFO     root:landslide.py:151 <Response [200]>
-INFO     root:landslide.py:154 test id: 377
+INFO     root:landslide.py:154 test id: 411
 INFO     root:landslide.py:155 
 
 INFO     root:landslide.py:156 test CriteriaStatus: PASSED
 INFO     root:landslide.py:157 
 
-INFO     root:landslide.py:158 test StateOrStep: 7
-INFO     root:landslide.py:150 get the url: http://10.133.6.19:8080/api/runningTests/377
+INFO     root:landslide.py:158 test StateOrStep: 6
+INFO     root:test_003_smf_rel_pdu.py:84 try delete landslide case times: 6
+INFO     root:landslide.py:150 get the url: http://10.133.6.19:8080/api/runningTests/411
 INFO     root:landslide.py:151 <Response [200]>
-INFO     root:landslide.py:154 test id: 377
+INFO     root:landslide.py:154 test id: 411
 INFO     root:landslide.py:155 
 
 INFO     root:landslide.py:156 test CriteriaStatus: PASSED
 INFO     root:landslide.py:157 
 
-INFO     root:landslide.py:158 test StateOrStep: 7
-INFO     root:landslide.py:150 get the url: http://10.133.6.19:8080/api/runningTests/377
+INFO     root:landslide.py:158 test StateOrStep: 6
+INFO     root:test_003_smf_rel_pdu.py:84 try delete landslide case times: 7
+INFO     root:landslide.py:150 get the url: http://10.133.6.19:8080/api/runningTests/411
 INFO     root:landslide.py:151 <Response [200]>
-INFO     root:landslide.py:154 test id: 377
+INFO     root:landslide.py:154 test id: 411
 INFO     root:landslide.py:155 
 
 INFO     root:landslide.py:156 test CriteriaStatus: PASSED
 INFO     root:landslide.py:157 
 
-INFO     root:landslide.py:158 test StateOrStep: 7
-INFO     root:landslide.py:150 get the url: http://10.133.6.19:8080/api/runningTests/377
+INFO     root:landslide.py:158 test StateOrStep: 6
+INFO     root:test_003_smf_rel_pdu.py:84 try delete landslide case times: 8
+INFO     root:landslide.py:150 get the url: http://10.133.6.19:8080/api/runningTests/411
 INFO     root:landslide.py:151 <Response [200]>
-INFO     root:landslide.py:154 test id: 377
+INFO     root:landslide.py:154 test id: 411
 INFO     root:landslide.py:155 
 
 INFO     root:landslide.py:156 test CriteriaStatus: PASSED
 INFO     root:landslide.py:157 
 
-INFO     root:landslide.py:158 test StateOrStep: 7
-INFO     root:landslide.py:150 get the url: http://10.133.6.19:8080/api/runningTests/377
+INFO     root:landslide.py:158 test StateOrStep: 6
+INFO     root:test_003_smf_rel_pdu.py:84 try delete landslide case times: 9
+INFO     root:landslide.py:150 get the url: http://10.133.6.19:8080/api/runningTests/411
 INFO     root:landslide.py:151 <Response [200]>
-INFO     root:landslide.py:154 test id: 377
+INFO     root:landslide.py:154 test id: 411
 INFO     root:landslide.py:155 
 
 INFO     root:landslide.py:156 test CriteriaStatus: PASSED
 INFO     root:landslide.py:157 
 
-INFO     root:landslide.py:158 test StateOrStep: 7
+INFO     root:landslide.py:158 test StateOrStep: 6
 INFO     root:config.py:23 ===stop to capture===
-INFO     root:config.py:32 scp root@172.0.5.27:/root/log/result2019_08_26_22_48_57/smfsm2019_08_26_22_48_57.log .
-INFO     root:config.py:33 vim scp://root@172.0.5.27//root/log/result2019_08_26_22_48_57/smfsm2019_08_26_22_48_57.log
-INFO     root:config.py:37 scp root@172.0.5.27:/root/log/result2019_08_26_22_48_57/pfcp2019_08_26_22_48_57.log .
-INFO     root:config.py:38 vim scp://root@172.0.5.27//root/log/result2019_08_26_22_48_57/pfcp2019_08_26_22_48_57.log
-INFO     root:config.py:42 scp root@172.0.5.27:/root/log/result2019_08_26_22_48_57/capture2019_08_26_22_48_57.pcap .
+INFO     root:config.py:32 scp root@172.0.5.27:/root/log/result2019_08_27_02_58_39/smfsm2019_08_27_02_58_39.log .
+INFO     root:config.py:33 vim scp://root@172.0.5.27//root/log/result2019_08_27_02_58_39/smfsm2019_08_27_02_58_39.log
+INFO     root:config.py:37 scp root@172.0.5.27:/root/log/result2019_08_27_02_58_39/pfcp2019_08_27_02_58_39.log .
+INFO     root:config.py:38 vim scp://root@172.0.5.27//root/log/result2019_08_27_02_58_39/pfcp2019_08_27_02_58_39.log
+INFO     root:config.py:42 scp root@172.0.5.27:/root/log/result2019_08_27_02_58_39/capture2019_08_27_02_58_39.pcap .

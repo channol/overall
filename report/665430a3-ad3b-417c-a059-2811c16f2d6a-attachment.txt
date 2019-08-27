@@ -1,0 +1,70 @@
+2019-08-26 23:38:16 [32mINFO[0m get the url: http://10.133.6.19:8080/api/runningTests/388
+2019-08-26 23:38:16 [32mINFO[0m <Response [200]>
+2019-08-26 23:38:16 [32mINFO[0m test id: 388
+2019-08-26 23:38:16 [32mINFO[0m 
+2019-08-26 23:38:16 [32mINFO[0m test CriteriaStatus: PASSED
+2019-08-26 23:38:16 [32mINFO[0m 
+2019-08-26 23:38:16 [32mINFO[0m test StateOrStep: 7
+2019-08-26 23:38:16 [32mINFO[0m get the url: http://10.133.6.19:8080/api/runningTests/388
+2019-08-26 23:38:16 [32mINFO[0m <Response [200]>
+2019-08-26 23:38:16 [32mINFO[0m test id: 388
+2019-08-26 23:38:16 [32mINFO[0m 
+2019-08-26 23:38:16 [32mINFO[0m test CriteriaStatus: PASSED
+2019-08-26 23:38:16 [32mINFO[0m 
+2019-08-26 23:38:16 [32mINFO[0m test StateOrStep: 7
+2019-08-26 23:38:17 [32mINFO[0m get the url: http://10.133.6.19:8080/api/runningTests/388
+2019-08-26 23:38:17 [32mINFO[0m <Response [200]>
+2019-08-26 23:38:17 [32mINFO[0m test id: 388
+2019-08-26 23:38:17 [32mINFO[0m 
+2019-08-26 23:38:17 [32mINFO[0m test CriteriaStatus: PASSED
+2019-08-26 23:38:17 [32mINFO[0m 
+2019-08-26 23:38:17 [32mINFO[0m test StateOrStep: 7
+2019-08-26 23:38:17 [32mINFO[0m get the url: http://10.133.6.19:8080/api/runningTests/388
+2019-08-26 23:38:17 [32mINFO[0m <Response [200]>
+2019-08-26 23:38:17 [32mINFO[0m test id: 388
+2019-08-26 23:38:17 [32mINFO[0m 
+2019-08-26 23:38:17 [32mINFO[0m test CriteriaStatus: PASSED
+2019-08-26 23:38:17 [32mINFO[0m 
+2019-08-26 23:38:17 [32mINFO[0m test StateOrStep: 7
+2019-08-26 23:38:18 [32mINFO[0m get the url: http://10.133.6.19:8080/api/runningTests/388
+2019-08-26 23:38:18 [32mINFO[0m <Response [200]>
+2019-08-26 23:38:18 [32mINFO[0m test id: 388
+2019-08-26 23:38:18 [32mINFO[0m 
+2019-08-26 23:38:18 [32mINFO[0m test CriteriaStatus: PASSED
+2019-08-26 23:38:18 [32mINFO[0m 
+2019-08-26 23:38:18 [32mINFO[0m test StateOrStep: 7
+2019-08-26 23:38:18 [32mINFO[0m get the url: http://10.133.6.19:8080/api/runningTests/388
+2019-08-26 23:38:18 [32mINFO[0m <Response [200]>
+2019-08-26 23:38:18 [32mINFO[0m test id: 388
+2019-08-26 23:38:18 [32mINFO[0m 
+2019-08-26 23:38:18 [32mINFO[0m test CriteriaStatus: PASSED
+2019-08-26 23:38:18 [32mINFO[0m 
+2019-08-26 23:38:18 [32mINFO[0m test StateOrStep: 7
+2019-08-26 23:38:18 [32mINFO[0m get the url: http://10.133.6.19:8080/api/runningTests/388
+2019-08-26 23:38:18 [32mINFO[0m <Response [200]>
+2019-08-26 23:38:18 [32mINFO[0m test id: 388
+2019-08-26 23:38:18 [32mINFO[0m 
+2019-08-26 23:38:18 [32mINFO[0m test CriteriaStatus: PASSED
+2019-08-26 23:38:18 [32mINFO[0m 
+2019-08-26 23:38:18 [32mINFO[0m test StateOrStep: 7
+2019-08-26 23:38:19 [32mINFO[0m get the url: http://10.133.6.19:8080/api/runningTests/388
+2019-08-26 23:38:19 [32mINFO[0m <Response [200]>
+2019-08-26 23:38:19 [32mINFO[0m test id: 388
+2019-08-26 23:38:19 [32mINFO[0m 
+2019-08-26 23:38:19 [32mINFO[0m test CriteriaStatus: PASSED
+2019-08-26 23:38:19 [32mINFO[0m 
+2019-08-26 23:38:19 [32mINFO[0m test StateOrStep: 7
+2019-08-26 23:38:19 [32mINFO[0m get the url: http://10.133.6.19:8080/api/runningTests/388
+2019-08-26 23:38:19 [32mINFO[0m <Response [200]>
+2019-08-26 23:38:19 [32mINFO[0m test id: 388
+2019-08-26 23:38:19 [32mINFO[0m 
+2019-08-26 23:38:19 [32mINFO[0m test CriteriaStatus: PASSED
+2019-08-26 23:38:19 [32mINFO[0m 
+2019-08-26 23:38:19 [32mINFO[0m test StateOrStep: 7
+2019-08-26 23:38:20 [32mINFO[0m get the url: http://10.133.6.19:8080/api/runningTests/388
+2019-08-26 23:38:20 [32mINFO[0m <Response [200]>
+2019-08-26 23:38:20 [32mINFO[0m test id: 388
+2019-08-26 23:38:20 [32mINFO[0m 
+2019-08-26 23:38:20 [32mINFO[0m test CriteriaStatus: PASSED
+2019-08-26 23:38:20 [32mINFO[0m 
+2019-08-26 23:38:20 [32mINFO[0m test StateOrStep: 7

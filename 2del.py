@@ -6,7 +6,7 @@ from config import *
 from NF import *
 
 def test_landslide_case_delete():
-    ids = [293,295,291]
-    for idl in ids:
+    #ids = [293,295,291]
+    for idl in range(301,303):
         Landslide.case_delete(str(idl))
 

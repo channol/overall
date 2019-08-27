@@ -60,11 +60,14 @@ def test_upf_session_rule(child_upf,ue_ip):
 def test_landslide_case_continue(get_test_id):
     if get_test_id:
         for i in range(10):
+            logging.info('try continue landslide case times: '+str(i))
             ls = Landslide.case_state(get_test_id)
             if ls == '5_Waiting':
                 ls = Landslide.case_continue(get_test_id)
                 if ls:
                     break
+                time.sleep(10)
+            else:
                 time.sleep(10)
     else:
         return False
@@ -72,11 +75,14 @@ def test_landslide_case_continue(get_test_id):
 def test_landslide_case_delete(get_test_id):
     if get_test_id:
         for i in range(10):
+            logging.info('try delete landslide case times: '+str(i))
             ls = Landslide.case_state(get_test_id)
             if ls == 'COMPLETE' or ls == 'COMPLETE_ERROR':
                 ls = Landslide.case_delete(get_test_id)
                 if ls:
                     break
+                time.sleep(10)
+            else:
                 time.sleep(10)
     else:
         return False

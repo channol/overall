@@ -9,6 +9,9 @@ a = time.time()
 
 def test_start():
     capture_start()
+
+#def test_get_ls_run():
+#    Landslide.get_ls_run()
 #############################################################
 @pytest.fixture(scope = 'module')
 def get_test_id():
@@ -52,27 +55,22 @@ def test_upf_session_rule(child_upf,ue_ip):
         rules = ['far','qer','pdr','urr']
         for rule in rules:
             NF.upf_session_rule(child_upf,ue_ip,rule)
+    NF.upf_close(child_upf)
 
 def test_smf_del_session(smf_ip):
-    NF.smf_del_session(smf_ip,get_parameter('supi'),get_parameter('pdu_id')
+    NF.smf_del_session(smf_ip,get_parameter('supi'),get_parameter('pdu_id'))
 
-def test_check_smf_del_session():
-    assert test_smf_del_session()
-
-def test_upf_session_rule_del(child_upf,ue_ip):
-    if ue_ip:
-        rules = ['far','qer','pdr','urr']
-        for rule in rules:
-            NF.upf_session_rule(child_upf,ue_ip,rule)
-#############################################################
 def test_landslide_case_continue(get_test_id):
     if get_test_id:
         for i in range(10):
+            logging.info('try continue landslide case times: '+str(i))
             ls = Landslide.case_state(get_test_id)
             if ls == '5_Waiting':
                 ls = Landslide.case_continue(get_test_id)
                 if ls:
                     break
+                time.sleep(10)
+            else:
                 time.sleep(10)
     else:
         return False
@@ -80,17 +78,19 @@ def test_landslide_case_continue(get_test_id):
 def test_landslide_case_delete(get_test_id):
     if get_test_id:
         for i in range(10):
+            logging.info('try delete landslide case times: '+str(i))
             ls = Landslide.case_state(get_test_id)
-            if ls == 'COMPLETE':
+            if ls == 'COMPLETE' or ls == 'COMPLETE_ERROR':
                 ls = Landslide.case_delete(get_test_id)
                 if ls:
                     break
+                time.sleep(10)
+            else:
                 time.sleep(10)
     else:
         return False
 #############################################################
 def test_stop():
     capture_stop()
-    NF.upf_close(child_upf)
     get_log()
 logging.info('spend time: '+str(time.time()-a))

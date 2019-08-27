@@ -1,0 +1,70 @@
+2019-08-26 23:09:08 [32mINFO[0m get the url: http://10.133.6.19:8080/api/runningTests/379
+2019-08-26 23:09:08 [32mINFO[0m <Response [200]>
+2019-08-26 23:09:08 [32mINFO[0m test id: 379
+2019-08-26 23:09:08 [32mINFO[0m 
+2019-08-26 23:09:08 [32mINFO[0m test CriteriaStatus: PENDING
+2019-08-26 23:09:08 [32mINFO[0m 
+2019-08-26 23:09:08 [32mINFO[0m test StateOrStep: 2_DELAY
+2019-08-26 23:09:08 [32mINFO[0m get the url: http://10.133.6.19:8080/api/runningTests/379
+2019-08-26 23:09:08 [32mINFO[0m <Response [200]>
+2019-08-26 23:09:08 [32mINFO[0m test id: 379
+2019-08-26 23:09:08 [32mINFO[0m 
+2019-08-26 23:09:08 [32mINFO[0m test CriteriaStatus: PENDING
+2019-08-26 23:09:08 [32mINFO[0m 
+2019-08-26 23:09:08 [32mINFO[0m test StateOrStep: 2_DELAY
+2019-08-26 23:09:09 [32mINFO[0m get the url: http://10.133.6.19:8080/api/runningTests/379
+2019-08-26 23:09:09 [32mINFO[0m <Response [200]>
+2019-08-26 23:09:09 [32mINFO[0m test id: 379
+2019-08-26 23:09:09 [32mINFO[0m 
+2019-08-26 23:09:09 [32mINFO[0m test CriteriaStatus: PENDING
+2019-08-26 23:09:09 [32mINFO[0m 
+2019-08-26 23:09:09 [32mINFO[0m test StateOrStep: 4
+2019-08-26 23:09:09 [32mINFO[0m get the url: http://10.133.6.19:8080/api/runningTests/379
+2019-08-26 23:09:09 [32mINFO[0m <Response [200]>
+2019-08-26 23:09:09 [32mINFO[0m test id: 379
+2019-08-26 23:09:09 [32mINFO[0m 
+2019-08-26 23:09:09 [32mINFO[0m test CriteriaStatus: PENDING
+2019-08-26 23:09:09 [32mINFO[0m 
+2019-08-26 23:09:09 [32mINFO[0m test StateOrStep: 5_Waiting
+2019-08-26 23:09:10 [32mINFO[0m get the url: http://10.133.6.19:8080/api/runningTests/379
+2019-08-26 23:09:10 [32mINFO[0m <Response [200]>
+2019-08-26 23:09:10 [32mINFO[0m test id: 379
+2019-08-26 23:09:10 [32mINFO[0m 
+2019-08-26 23:09:10 [32mINFO[0m test CriteriaStatus: PENDING
+2019-08-26 23:09:10 [32mINFO[0m 
+2019-08-26 23:09:10 [32mINFO[0m test StateOrStep: 5_Waiting
+2019-08-26 23:09:10 [32mINFO[0m get the url: http://10.133.6.19:8080/api/runningTests/379
+2019-08-26 23:09:10 [32mINFO[0m <Response [200]>
+2019-08-26 23:09:10 [32mINFO[0m test id: 379
+2019-08-26 23:09:10 [32mINFO[0m 
+2019-08-26 23:09:10 [32mINFO[0m test CriteriaStatus: PENDING
+2019-08-26 23:09:10 [32mINFO[0m 
+2019-08-26 23:09:10 [32mINFO[0m test StateOrStep: 5_Waiting
+2019-08-26 23:09:11 [32mINFO[0m get the url: http://10.133.6.19:8080/api/runningTests/379
+2019-08-26 23:09:11 [32mINFO[0m <Response [200]>
+2019-08-26 23:09:11 [32mINFO[0m test id: 379
+2019-08-26 23:09:11 [32mINFO[0m 
+2019-08-26 23:09:11 [32mINFO[0m test CriteriaStatus: PENDING
+2019-08-26 23:09:11 [32mINFO[0m 
+2019-08-26 23:09:11 [32mINFO[0m test StateOrStep: 5_Waiting
+2019-08-26 23:09:11 [32mINFO[0m get the url: http://10.133.6.19:8080/api/runningTests/379
+2019-08-26 23:09:11 [32mINFO[0m <Response [200]>
+2019-08-26 23:09:11 [32mINFO[0m test id: 379
+2019-08-26 23:09:11 [32mINFO[0m 
+2019-08-26 23:09:11 [32mINFO[0m test CriteriaStatus: PENDING
+2019-08-26 23:09:11 [32mINFO[0m 
+2019-08-26 23:09:11 [32mINFO[0m test StateOrStep: 5_Waiting
+2019-08-26 23:09:12 [32mINFO[0m get the url: http://10.133.6.19:8080/api/runningTests/379
+2019-08-26 23:09:12 [32mINFO[0m <Response [200]>
+2019-08-26 23:09:12 [32mINFO[0m test id: 379
+2019-08-26 23:09:12 [32mINFO[0m 
+2019-08-26 23:09:12 [32mINFO[0m test CriteriaStatus: PENDING
+2019-08-26 23:09:12 [32mINFO[0m 
+2019-08-26 23:09:12 [32mINFO[0m test StateOrStep: 5_Waiting
+2019-08-26 23:09:12 [32mINFO[0m get the url: http://10.133.6.19:8080/api/runningTests/379
+2019-08-26 23:09:12 [32mINFO[0m <Response [200]>
+2019-08-26 23:09:12 [32mINFO[0m test id: 379
+2019-08-26 23:09:12 [32mINFO[0m 
+2019-08-26 23:09:12 [32mINFO[0m test CriteriaStatus: PENDING
+2019-08-26 23:09:12 [32mINFO[0m 
+2019-08-26 23:09:12 [32mINFO[0m test StateOrStep: 5_Waiting
