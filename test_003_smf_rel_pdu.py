@@ -54,8 +54,10 @@ def test_upf_session_rule(child_upf,ue_ip):
             NF.upf_session_rule(child_upf,ue_ip,rule)
 
 def test_smf_del_session(smf_ip):
-    ls = NF.smf_del_session(smf_ip,get_parameter('supi'),get_parameter('pdu_id')
-    assert ls
+    NF.smf_del_session(smf_ip,get_parameter('supi'),get_parameter('pdu_id')
+
+def test_check_smf_del_session():
+    assert test_smf_del_session()
 
 def test_upf_session_rule_del(child_upf,ue_ip):
     if ue_ip:

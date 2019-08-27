@@ -73,7 +73,7 @@ def test_landslide_case_delete(get_test_id):
     if get_test_id:
         for i in range(10):
             ls = Landslide.case_state(get_test_id)
-            if ls == 'COMPLETE':
+            if ls == 'COMPLETE' or ls == 'COMPLETE_ERROR':
                 ls = Landslide.case_delete(get_test_id)
                 if ls:
                     break
