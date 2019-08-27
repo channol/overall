@@ -60,4 +60,4 @@ export PATH=$PATH:$JAVA_HOME/bin
 - 直接调用（可优化）： `/root/allure-2.12.1/bin/allure'
 
 # 效果图
-
+![image](https://github.com/channol/overall/blob/master/log/TIM%E5%9B%BE%E7%89%8720190827100603.png)
