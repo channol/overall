@@ -1,0 +1,24 @@
+2019-08-28 08:53:55 [32mINFO[0m try continue landslide case times: 0
+2019-08-28 08:53:56 [32mINFO[0m get the url: http://10.133.6.19:8080/api/runningTests/41
+2019-08-28 08:53:56 [32mINFO[0m <Response [200]>
+2019-08-28 08:53:56 [32mINFO[0m test id: 41
+2019-08-28 08:53:56 [32mINFO[0m 
+2019-08-28 08:53:56 [32mINFO[0m test CriteriaStatus: PASSED
+2019-08-28 08:53:56 [32mINFO[0m 
+2019-08-28 08:53:56 [32mINFO[0m test StateOrStep: 5_Waiting
+2019-08-28 08:53:56 [32mINFO[0m post the url: http://10.133.6.19:8080/api/runningTests/41?action=continue
+2019-08-28 08:53:56 [32mINFO[0m <Response [200]>
+2019-08-28 08:53:56 [32mINFO[0m {
+                            "result": "Command successful",
+                            "url": "http://10.133.6.19:8080/api/runningTests/41",
+                            "measurementsUrl": "http://10.133.6.19:8080/api/runningTests/41/measurements",
+                            "criteriaUrl": "http://10.133.6.19:8080/api/runningTests/41/criteria",
+                            "perSessionReportStatusUrl": "http://10.133.6.19:8080/api/runningTests/41/persessionreportstatus",
+                            "noteToUser": "Be sure to HTTP-DELETE this RESTful API controlled resource when done",
+                            "id": 41,
+                            "library": 10828,
+                            "name": "case_001_pdu_establishment",
+                            "user": "qinglong",
+                            "criteriaStatus": "PASSED",
+                            "testStateOrStep": "6"
+                         }

@@ -177,3 +177,18 @@ class Landslide():
         else:
             logging.info(rsp.text)
             return True
+
+    def case_measurements(test_id,ls_user='qinglong',ls_password='casa123'):
+        session = requests.session()
+        session.auth = (ls_user,ls_password)
+        url = "http://10.133.6.19:8080/api/runningTests/"+test_id+"/measurements"
+        rsp = session.get(url)
+        logging.info('get the url: '+rsp.url)
+        logging.info(rsp)
+        if rsp.status_code != 200:
+            logging.error('check the url and session')
+            logging.error(rsp.text)
+            return False
+        else:
+            logging.info(rsp.text)
+            return True

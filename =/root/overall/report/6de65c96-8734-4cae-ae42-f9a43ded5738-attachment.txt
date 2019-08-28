@@ -1,0 +1,80 @@
+2019-08-28 08:53:56 [32mINFO[0m post measurements of landslide case times: 0
+2019-08-28 08:53:57 [32mINFO[0m get the url: http://10.133.6.19:8080/api/runningTests/41
+2019-08-28 08:53:57 [32mINFO[0m <Response [200]>
+2019-08-28 08:53:57 [32mINFO[0m test id: 41
+2019-08-28 08:53:57 [32mINFO[0m 
+2019-08-28 08:53:57 [32mINFO[0m test CriteriaStatus: PASSED
+2019-08-28 08:53:57 [32mINFO[0m 
+2019-08-28 08:53:57 [32mINFO[0m test StateOrStep: 6
+2019-08-28 08:54:07 [32mINFO[0m post measurements of landslide case times: 1
+2019-08-28 08:54:07 [32mINFO[0m get the url: http://10.133.6.19:8080/api/runningTests/41
+2019-08-28 08:54:07 [32mINFO[0m <Response [200]>
+2019-08-28 08:54:07 [32mINFO[0m test id: 41
+2019-08-28 08:54:07 [32mINFO[0m 
+2019-08-28 08:54:07 [32mINFO[0m test CriteriaStatus: PASSED
+2019-08-28 08:54:07 [32mINFO[0m 
+2019-08-28 08:54:07 [32mINFO[0m test StateOrStep: 6
+2019-08-28 08:54:17 [32mINFO[0m post measurements of landslide case times: 2
+2019-08-28 08:54:18 [32mINFO[0m get the url: http://10.133.6.19:8080/api/runningTests/41
+2019-08-28 08:54:18 [32mINFO[0m <Response [200]>
+2019-08-28 08:54:18 [32mINFO[0m test id: 41
+2019-08-28 08:54:18 [32mINFO[0m 
+2019-08-28 08:54:18 [32mINFO[0m test CriteriaStatus: PASSED
+2019-08-28 08:54:18 [32mINFO[0m 
+2019-08-28 08:54:18 [32mINFO[0m test StateOrStep: 6
+2019-08-28 08:54:28 [32mINFO[0m post measurements of landslide case times: 3
+2019-08-28 08:54:28 [32mINFO[0m get the url: http://10.133.6.19:8080/api/runningTests/41
+2019-08-28 08:54:28 [32mINFO[0m <Response [200]>
+2019-08-28 08:54:28 [32mINFO[0m test id: 41
+2019-08-28 08:54:28 [32mINFO[0m 
+2019-08-28 08:54:28 [32mINFO[0m test CriteriaStatus: PASSED
+2019-08-28 08:54:28 [32mINFO[0m 
+2019-08-28 08:54:28 [32mINFO[0m test StateOrStep: 6
+2019-08-28 08:54:38 [32mINFO[0m post measurements of landslide case times: 4
+2019-08-28 08:54:38 [32mINFO[0m get the url: http://10.133.6.19:8080/api/runningTests/41
+2019-08-28 08:54:38 [32mINFO[0m <Response [200]>
+2019-08-28 08:54:38 [32mINFO[0m test id: 41
+2019-08-28 08:54:38 [32mINFO[0m 
+2019-08-28 08:54:38 [32mINFO[0m test CriteriaStatus: PASSED
+2019-08-28 08:54:38 [32mINFO[0m 
+2019-08-28 08:54:38 [32mINFO[0m test StateOrStep: 6
+2019-08-28 08:54:49 [32mINFO[0m post measurements of landslide case times: 5
+2019-08-28 08:54:49 [32mINFO[0m get the url: http://10.133.6.19:8080/api/runningTests/41
+2019-08-28 08:54:49 [32mINFO[0m <Response [200]>
+2019-08-28 08:54:49 [32mINFO[0m test id: 41
+2019-08-28 08:54:49 [32mINFO[0m 
+2019-08-28 08:54:49 [32mINFO[0m test CriteriaStatus: PASSED
+2019-08-28 08:54:49 [32mINFO[0m 
+2019-08-28 08:54:49 [32mINFO[0m test StateOrStep: 6
+2019-08-28 08:54:59 [32mINFO[0m post measurements of landslide case times: 6
+2019-08-28 08:54:59 [32mINFO[0m get the url: http://10.133.6.19:8080/api/runningTests/41
+2019-08-28 08:54:59 [32mINFO[0m <Response [200]>
+2019-08-28 08:54:59 [32mINFO[0m test id: 41
+2019-08-28 08:54:59 [32mINFO[0m 
+2019-08-28 08:54:59 [32mINFO[0m test CriteriaStatus: PASSED
+2019-08-28 08:54:59 [32mINFO[0m 
+2019-08-28 08:54:59 [32mINFO[0m test StateOrStep: 6
+2019-08-28 08:55:09 [32mINFO[0m post measurements of landslide case times: 7
+2019-08-28 08:55:10 [32mINFO[0m get the url: http://10.133.6.19:8080/api/runningTests/41
+2019-08-28 08:55:10 [32mINFO[0m <Response [200]>
+2019-08-28 08:55:10 [32mINFO[0m test id: 41
+2019-08-28 08:55:10 [32mINFO[0m 
+2019-08-28 08:55:10 [32mINFO[0m test CriteriaStatus: PASSED
+2019-08-28 08:55:10 [32mINFO[0m 
+2019-08-28 08:55:10 [32mINFO[0m test StateOrStep: 6
+2019-08-28 08:55:20 [32mINFO[0m post measurements of landslide case times: 8
+2019-08-28 08:55:20 [32mINFO[0m get the url: http://10.133.6.19:8080/api/runningTests/41
+2019-08-28 08:55:20 [32mINFO[0m <Response [200]>
+2019-08-28 08:55:20 [32mINFO[0m test id: 41
+2019-08-28 08:55:20 [32mINFO[0m 
+2019-08-28 08:55:20 [32mINFO[0m test CriteriaStatus: PASSED
+2019-08-28 08:55:20 [32mINFO[0m 
+2019-08-28 08:55:20 [32mINFO[0m test StateOrStep: 6
+2019-08-28 08:55:30 [32mINFO[0m post measurements of landslide case times: 9
+2019-08-28 08:55:31 [32mINFO[0m get the url: http://10.133.6.19:8080/api/runningTests/41
+2019-08-28 08:55:31 [32mINFO[0m <Response [200]>
+2019-08-28 08:55:31 [32mINFO[0m test id: 41
+2019-08-28 08:55:31 [32mINFO[0m 
+2019-08-28 08:55:31 [32mINFO[0m test CriteriaStatus: PASSED
+2019-08-28 08:55:31 [32mINFO[0m 
+2019-08-28 08:55:31 [32mINFO[0m test StateOrStep: 6

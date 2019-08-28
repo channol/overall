@@ -72,6 +72,21 @@ def test_landslide_case_continue(get_test_id):
     else:
         return False
 
+def test_landslide_case_measurements(get_test_id):
+    if get_test_id:
+        for i in range(10):
+            logging.info('post measurements of landslide case times: '+str(i))
+            ls = Landslide.case_state(get_test_id)
+            if ls == 'COMPLETE' or ls == 'COMPLETE_ERROR':
+                ls = Landslide.case_measurements(get_test_id)
+                if ls:
+                    break
+                time.sleep(10)
+            else:
+                time.sleep(10)
+    else:
+        return False
+
 def test_landslide_case_delete(get_test_id):
     if get_test_id:
         for i in range(10):

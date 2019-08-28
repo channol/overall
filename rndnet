@@ -1,0 +1,2 @@
+# temporary file containing a randomly generated docker subnet
+export RNDNET=172.29.172.0/24
