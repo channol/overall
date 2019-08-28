@@ -1,0 +1,53 @@
+2019-08-27 04:58:57 [32mINFO[0m try delete landslide case times: 0
+2019-08-27 04:58:58 [32mINFO[0m get the url: http://10.133.6.19:8080/api/runningTests/437
+2019-08-27 04:58:58 [32mINFO[0m <Response [200]>
+2019-08-27 04:58:58 [32mINFO[0m test id: 437
+2019-08-27 04:58:58 [32mINFO[0m 
+2019-08-27 04:58:58 [32mINFO[0m test CriteriaStatus: PASSED
+2019-08-27 04:58:58 [32mINFO[0m 
+2019-08-27 04:58:58 [32mINFO[0m test StateOrStep: 7
+2019-08-27 04:59:08 [32mINFO[0m try delete landslide case times: 1
+2019-08-27 04:59:08 [32mINFO[0m get the url: http://10.133.6.19:8080/api/runningTests/437
+2019-08-27 04:59:08 [32mINFO[0m <Response [200]>
+2019-08-27 04:59:08 [32mINFO[0m test id: 437
+2019-08-27 04:59:08 [32mINFO[0m 
+2019-08-27 04:59:08 [32mINFO[0m test CriteriaStatus: PASSED
+2019-08-27 04:59:08 [32mINFO[0m 
+2019-08-27 04:59:08 [32mINFO[0m test StateOrStep: CLEANUP
+2019-08-27 04:59:18 [32mINFO[0m try delete landslide case times: 2
+2019-08-27 04:59:19 [32mINFO[0m get the url: http://10.133.6.19:8080/api/runningTests/437
+2019-08-27 04:59:19 [32mINFO[0m <Response [200]>
+2019-08-27 04:59:19 [32mINFO[0m test id: 437
+2019-08-27 04:59:19 [32mINFO[0m 
+2019-08-27 04:59:19 [32mINFO[0m test CriteriaStatus: PASSED
+2019-08-27 04:59:19 [32mINFO[0m 
+2019-08-27 04:59:19 [32mINFO[0m test StateOrStep: WAIT_FOR_TRANSFERS
+2019-08-27 04:59:29 [32mINFO[0m try delete landslide case times: 3
+2019-08-27 04:59:29 [32mINFO[0m get the url: http://10.133.6.19:8080/api/runningTests/437
+2019-08-27 04:59:29 [32mINFO[0m <Response [200]>
+2019-08-27 04:59:29 [32mINFO[0m test id: 437
+2019-08-27 04:59:29 [32mINFO[0m 
+2019-08-27 04:59:29 [32mINFO[0m test CriteriaStatus: PASSED
+2019-08-27 04:59:29 [32mINFO[0m 
+2019-08-27 04:59:29 [32mINFO[0m test StateOrStep: COMPLETE
+2019-08-27 04:59:30 [32mINFO[0m delete the url: http://10.133.6.19:8080/api/runningTests/437?action=delete
+2019-08-27 04:59:30 [32mINFO[0m <Response [200]>
+2019-08-27 04:59:30 [32mINFO[0m {
+                            "result": "Running test session object deleted",
+                            "url": "http://10.133.6.19:8080/api/runningTests/437",
+                            "measurementsUrl": "http://10.133.6.19:8080/api/runningTests/437/measurements",
+                            "criteriaUrl": "http://10.133.6.19:8080/api/runningTests/437/criteria",
+                            "perSessionReportStatusUrl": "http://10.133.6.19:8080/api/runningTests/437/persessionreportstatus",
+                            "noteToUser": "Be sure to HTTP-DELETE this RESTful API controlled resource when done",
+                            "id": 437,
+                            "library": 10828,
+                            "name": "case_001_pdu_establishment",
+                            "user": "qinglong",
+                            "criteriaStatus": "PASSED",
+                            "testStateOrStep": "COMPLETE",
+                            "resultFilesList": [
+                               "http://10.133.6.19/results/qinglong/19-08-27_03.58.03__RID-437__case_001_pdu_establishment.log.txt",
+                               "http://10.133.6.19/results/qinglong/19-08-27_03.58.03__RID-437__case_001_pdu_establishment.xls",
+                               "http://10.133.6.19/results/qinglong/19-08-27_03.58.03__RID-437__ts0_eth1_capture.pcap"
+                             ]
+                         }

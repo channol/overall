@@ -7,10 +7,10 @@ from NF import *
 
 #a = time.time()
 
-def test_start():
+def test_003_start():
     capture_start()
 
-#def test_get_ls_run():
+#def test_003_get_ls_run():
 #    Landslide.get_ls_run()
 #############################################################
 @pytest.fixture(scope = 'module')
@@ -44,23 +44,23 @@ def ue_ip(get_test_id,smf_ip):
     else:
         return False
 #############################################################
-def test_landslide_case_start(get_test_id):
+def test_003_landslide_case_start(get_test_id):
     assert get_test_id, "landslide is running a case!"
 
-def test_ue_ip(ue_ip):
+def test_003_ue_ip(ue_ip):
     assert ue_ip, "can not get ue ip!"
 
-def test_upf_session_rule(child_upf,ue_ip):
+def test_003_upf_session_rule(child_upf,ue_ip):
     if ue_ip:
         rules = ['far','qer','pdr','urr']
         for rule in rules:
             NF.upf_session_rule(child_upf,ue_ip,rule)
     NF.upf_close(child_upf)
 
-def test_smf_del_session(smf_ip):
+def test_003_smf_del_session(smf_ip):
     NF.smf_del_session(smf_ip,get_parameter('supi'),get_parameter('pdu_id'))
 
-def test_landslide_case_continue(get_test_id):
+def test_003_landslide_case_continue(get_test_id):
     if get_test_id:
         for i in range(10):
             logging.info('try continue landslide case times: '+str(i))
@@ -75,7 +75,7 @@ def test_landslide_case_continue(get_test_id):
     else:
         return False
 
-def test_landslide_case_delete(get_test_id):
+def test_003_landslide_case_delete(get_test_id):
     if get_test_id:
         for i in range(10):
             logging.info('try delete landslide case times: '+str(i))
@@ -90,7 +90,7 @@ def test_landslide_case_delete(get_test_id):
     else:
         return False
 #############################################################
-def test_stop():
+def test_003_stop():
     capture_stop()
     get_log()
     time.sleep(3)
