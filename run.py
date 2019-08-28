@@ -3,4 +3,4 @@
 import pytest
 
 if __name__ == '__main__':
-    pytest.main(['-s','--alluredir==/root/overall/report'])
+    pytest.main(['-s','--alluredir=./allure-report'])
