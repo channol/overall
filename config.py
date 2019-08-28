@@ -4,10 +4,10 @@ import sys,os,re,time,logging
 
 ###########################################
 strftime = time.strftime('%Y_%m_%d_%H_%M_%S')
-os.makedirs('/root/log/result{}'.format(strftime))
-cap_file = '/root/log/result'+strftime+'/capture'+strftime+'.pcap'
-smfsm_file = '/root/log/result'+strftime+'/smfsm'+strftime+'.log'
-pfcp_file = '/root/log/result'+strftime+'/pfcp'+strftime+'.log'
+os.makedirs('./log/result{}'.format(strftime))
+cap_file = './log/result'+strftime+'/capture'+strftime+'.pcap'
+smfsm_file = './log/result'+strftime+'/smfsm'+strftime+'.log'
+pfcp_file = './log/result'+strftime+'/pfcp'+strftime+'.log'
 ###########################################
 def get_parameter(parameter):
     config = configparser.ConfigParser()
@@ -24,7 +24,7 @@ def capture_stop():
     os.system("killall tcpdump")
 
 def get_log():
-    os.chdir('/root/test/')
+    os.chdir('./dcomp/')
     print(cap_file)
     os.popen('dcomp logs smfsm > {}'.format(smfsm_file))
     os.popen('dcomp logs pfcp > {}'.format(pfcp_file))
@@ -42,4 +42,4 @@ def get_log():
         logging.info('scp root@172.0.5.27:'+cap_file+' .')
     else:
         logging.warning('The capture file is not exist!')
-    os.chdir('/root/overall/')
+    os.chdir('..')
