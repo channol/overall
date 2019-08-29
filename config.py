@@ -21,15 +21,15 @@ def get_parameter(parameter):
 
 def capture_start():
     logging.info('===start to capture===')
-    os.system("nohup tcpdump -i any -f 'net 172.24.14.0/24' -w %s &" %(cap_file))
+    os.system("nohup /usr/sbin/tcpdump -i any -f 'net 172.24.14.0/24' -w %s &" %(cap_file))
 
 def capture_stop():
     logging.info('===stop to capture===')
     os.system("killall tcpdump")
 
 def get_log():
-    os.getcwd()
-    os.chdir('./dcomp/')
+    path_log = os.getcwd()
+    os.chdir(path+'/dcomp/')
     print(cap_file)
     os.popen('dcomp logs smfsm > {}'.format(smfsm_file))
     os.popen('dcomp logs pfcp > {}'.format(pfcp_file))
@@ -47,4 +47,4 @@ def get_log():
         logging.info('scp root@172.0.5.27:'+cap_file+' .')
     else:
         logging.warning('The capture file is not exist!')
-    os.curdir
+    os.chdir(path_log)
