@@ -26,11 +26,11 @@ def capture_start():
 
 def capture_stop():
     logging.info('===stop to capture===')
-    os.system("killall tcpdump")
+    os.system("sudo killall tcpdump")
 
 def get_log():
     path_log = os.getcwd()
-    os.chdir(path+'/dcomp/')
+    os.chdir(path_log+'/dcomp/')
     print(cap_file)
     os.popen('sudo dcomp logs smfsm > {}'.format(smfsm_file))
     os.popen('sudo dcomp logs pfcp > {}'.format(pfcp_file))
