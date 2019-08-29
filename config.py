@@ -21,7 +21,8 @@ def get_parameter(parameter):
 
 def capture_start():
     logging.info('===start to capture===')
-    os.system("nohup /usr/sbin/tcpdump -i any -f 'net 172.24.14.0/24' -w %s &" %(cap_file))
+    os.system("sudo nohup /usr/sbin/tcpdump -i any -f 'net 172.24.14.0/24' -w %s &" %(cap_file))
+
 
 def capture_stop():
     logging.info('===stop to capture===')
@@ -31,8 +32,8 @@ def get_log():
     path_log = os.getcwd()
     os.chdir(path+'/dcomp/')
     print(cap_file)
-    os.popen('dcomp logs smfsm > {}'.format(smfsm_file))
-    os.popen('dcomp logs pfcp > {}'.format(pfcp_file))
+    os.popen('sudo dcomp logs smfsm > {}'.format(smfsm_file))
+    os.popen('sudo dcomp logs pfcp > {}'.format(pfcp_file))
     if os.path.exists(smfsm_file):
         logging.info('scp root@172.0.5.27:'+smfsm_file+' .')
         logging.info('vim scp://root@172.0.5.27/'+smfsm_file)

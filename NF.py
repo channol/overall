@@ -18,7 +18,7 @@ class NF():
 
 
     def get_ip(container):
-        getip = os.popen("docker inspect -f '{{range .NetworkSettings.Networks}}{{.IPAddress}}{{end}}' %s" %(container))
+        getip = os.popen("sudo docker inspect -f '{{range .NetworkSettings.Networks}}{{.IPAddress}}{{end}}' %s" %(container))
         ip = getip.read().replace('\n',"")
         return ip
 
