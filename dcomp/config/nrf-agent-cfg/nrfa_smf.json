@@ -1,0 +1,128 @@
+
+{
+  "dbURL": "redis:6379",
+  "nrfServiceURL": "nrf:80",
+  "monitoringK8sService": "smf.svc.cluster.local",
+  "NFProfile": {
+    "nfInstanceId": "smf",
+    "nfType": "SMF",
+    "nfStatus": "REGISTERED",
+    "plmnList":[
+     {
+        "mcc": "450",
+        "mnc": "05"
+     },
+     {
+        "mcc": "311",
+	"mnc": "270"
+     }
+    ],
+    "sNssais": [
+      {
+        "sst": 1,
+        "sd": "abd001"
+      },
+      {
+        "sst": 2,
+        "sd": "slice2"
+      }
+    ],
+    "nsiList": [
+      "nsiList0",
+      "nsiList1"
+    ],
+    "fqdn": "NFProfile-fqdn",
+    "interPlmnFqdn": "NFProfile-inter_plmn_fqdn",
+    "ipv4Addresses": [
+      "192.168.1.114",
+      "1.1.1.1"
+    ],
+    "ipv6Addresses": [
+      "2001::0:0:0:0",
+      "2001::1:1:1:1"
+    ],
+    "ipv6Prefixes": [
+      "24",
+      "68"
+    ],
+    "capacity": 88,
+    "load": 10,
+    "locality": "locatlity",
+    "nfServices": [
+      {
+        "serviceInstanceId": "smf-instance-id",
+        "serviceName": "nsmf_pdusesssion",
+        "versions": [
+          {
+            "apiVersionInUri": "v1",
+            "apiFullVersion": "full-ver",
+            "expiry": "2020-04-01T12:00:00Z"
+          }
+        ],
+        "scheme": "http",
+        "nfServiceStatus": "REGISTERED",
+        "fqdn": "smf",
+        "interPlmnFqdn": "inter-plmn-fqdn",
+        "ipEndPoints": [
+          {
+            "transport": "TCP",
+            "ipv6Address": "2001:db8:abcd:0012::200",
+            "port": 8080
+          }
+        ],
+        "apiPrefix": "api_prefix",
+        "defaultNotificationSubscriptions": [
+          {
+            "notificationType": "N2_INFORMATION",
+            "callbackUri": "cb-uri",
+            "n1MessageClass": "5GMM",
+            "n2InformationClass": "NRPPa"
+          }
+        ],
+        "allowedPlmns": [
+          {
+            "mcc": "460",
+            "mnc": "01"
+          }
+        ],
+        "allowedNfDomains": [
+          "pattern"
+        ],
+        "capacity": 100,
+        "load": 100,
+        "recoveryTime": "2019-04-01T12:00:00Z",
+        "supportedFeatures": "1A"
+      }
+    ],
+    "smfInfo": {
+     "sNssaiSmfInfoList":[
+	     {
+		     "sNssai":
+		     {
+			     "sst":1,"sd":"abd001"
+		     },
+		     "dnnSmfInfoList":
+		     [{
+			     "dnn":"inet1"
+		     }]
+	     }],
+     "taiList": [
+        {
+          "plmnId": {
+            "mcc": "450",
+            "mnc": "05"
+          },
+          "tac": "1110096"
+        },
+        {
+          "plmnId": {
+            "mcc": "460",
+            "mnc": "01"
+          },
+          "tac": "TAC2"
+        }
+      ],
+      "pgwFqdn": "fqdn"
+    }
+  }
+}

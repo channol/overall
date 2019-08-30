@@ -1,0 +1,24 @@
+
+{
+  "dbURL": "redis:6379",
+  "monitoringK8sService": "amf.svc.cluster.local",
+  "nrfServiceURL": "sim-nrf:90",
+  "NFProfile": {
+    "nfInstanceID":"123e4567-e89b-12d3-a456-426655440000",
+    "nfType":"NRF","nfStatus":"REGISTERED",
+    "plmnList":[{"mcc":"311","mnc":"272"}, {"mcc":"311","mnc":"273"}],
+    "sNssais":[{"sst":3,"sd":"eMB3"}],
+    "nsiList":["1"],
+    "fqdn":"www.abc.com",
+    "interPlmnFqdn":"www.abc.com",
+    "ipv4Addresses":["172.17.1.1"],
+    "ipv6Addresses":["2001:db8:abcd:0012::1"],
+    "capacity":100,
+    "load":50,
+    "locality":"DataCenter-1",      
+    "recoveryTime":"2019-04-01T12:00:00Z",
+    "amfInfo":{"amfSetId":"B","amfRegionId":"123A","guamiList":[{"plmnId":{"mcc":"311","mnc":"272"},"amfId":"123ABC"}],"taiList":[{"plmnId":{"mcc":"311","mnc":"272"},"tac":"4305"}],"taiRangeList":[{"plmnId":{"mcc":"311","mnc":"272"},"tacRangeList":[{"start":"75123","end":"86541","pattern":"^[0-9]{5}$"}]}],"backupInfoAmfFailure":[{"plmnId":{"mcc":"311","mnc":"272"},"amfId":"987FED"}],"backupInfoAmfRemoval":[{"plmnId":{"mcc":"311","mnc":"272"},"amfId":"1A2B3C"}],"n2InterfaceAmfInfo":{"ipv4EndpointAddress":["172.17.1.1"],"ipv6EndpointAddress":["2001:db8:abcd:0012::1"],"amfName":"AMF"}},
+    "nfServices":[{"serviceInstanceID":"046a1611","serviceName":"nnrf-nfm","versions":[{"apiVersionInUri":"v1","apiFullVersion":"1.R15.1.0","expiry":"2020-04-01T12:00:00Z"}],"scheme":"https","nfServiceStatus":"REGISTERED","fqdn":"www.abc.com","ipEndPoints":[{"ipv6Address":"2001:db8:abcd:0012::200","transport":"TCP","port":8080}],"apiPrefix":"https://172.17.1.101:2000","defaultNotificationSubscriptions":[{"notificationType":"N2_INFORMATION","callbackUri":"http://localhost:80","n1MessageClass":"SM","n2InformationClass":"NRPPa"}],"capacity":100,"load":50,"recoveryTime":"2019-04-01T12:00:00Z","supportedFeatures":"1A"}]
+
+  }
+}

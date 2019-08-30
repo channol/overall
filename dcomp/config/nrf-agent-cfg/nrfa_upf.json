@@ -1,0 +1,123 @@
+{
+  "dbURL": "redis:6379",
+  "nrfServiceURL": "sim-nrf:90",
+  "monitoringK8sService": "upf.svc.cluster.local",
+  "NFProfile": {
+    "nfInstanceID": "upf1",
+    "nfType": "UPF",
+    "nfStatus": "REGISTERED",
+    "plmn": {
+      "mcc": "460",
+      "mnc": "01"
+    },
+    "sNssais": [
+      {
+        "sst": 1,
+        "sd": "slice1"
+      },
+      {
+        "sst": 2,
+        "sd": "slice1"
+      }
+    ],
+    "nsiList": [
+      "nsiList0",
+      "nsiList1"
+    ],
+    "fqdn": "upf-fqdn",
+    "interPlmnFqdn": "NFProfile-inter_plmn_fqdn",
+    "ipv4Addresses": [
+      "192.168.10.10",
+      "1.1.1.1"
+    ],
+    "ipv6Addresses": [
+      "2001::0:0:0:0",
+      "2001::1:1:1:1"
+    ],
+    "ipv6Prefixes": [
+      "24",
+      "68"
+    ],
+    "capacity": 88,
+    "load": 10,
+    "locality": "locatlity",
+    "nfServices": [
+      {
+        "serviceInstanceID": "upf1-instance-id",
+        "serviceName": "upf-svc-name",
+        "versions": [
+          {
+            "apiVersionInUri": "ver_in_uri",
+            "apiFullVersion": "full-ver",
+            "expiry": "2020-04-01T12:00:00Z"
+          }
+        ],
+        "scheme": "http",
+        "nfServiceStatus": "REGISTERED",
+        "fqdn": "upf-fqdn",
+        "interPlmnFqdn": "inter-plmn-fqdn",
+        "ipEndPoints": [
+          {
+            "ipv4Address": "1.1.1.1",
+            "transport": "TCP"
+          }
+        ],
+        "apiPrefix": "api_prefix",
+        "defaultNotificationSubscriptions": [
+          {
+            "notificationType": "N2_INFORMATION",
+            "callbackUri": "cb-uri",
+            "n1MessageClass": "5GMM",
+            "n2InformationClass": "NRPPa"
+          }
+        ],
+        "allowedPlmns": [
+          {
+            "mcc": "460",
+            "mnc": "01"
+          }
+        ]
+      }
+    ],
+    "upfInfo": {
+      "sNssaiUpfInfoList": [
+        {
+          "sNssai": {
+            "sst": 1,
+            "sd": "slice1"
+          },
+          "dnnUpfInfoList": [
+            {
+              "dnn": "ddn00",
+              "ipv4PoolList": [
+                "192.168.40.0/24",
+                "170.100.0.0/16"
+              ]
+            },
+            {
+              "dnn": "ddn01"
+            }
+          ]
+        },
+        {
+          "sNssai": {
+            "sst": 1,
+            "sd": "slice1"
+          },
+          "dnnUpfInfoList": [
+            {
+              "dnn": "ddn00"
+            },
+            {
+              "dnn": "ddn01"
+            }
+          ]
+        }
+      ],
+      "smfServingArea": [
+        "smfSerArea0",
+        "smfSerArea1"
+      ]
+    }
+  }
+}

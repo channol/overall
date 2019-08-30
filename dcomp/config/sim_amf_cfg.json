@@ -1,0 +1,8 @@
+{
+    "dnn": "inet1",
+    "start_supi": "12345678901234",
+    "pdu": 5,
+    "smf_fqdn": "smfsm",
+    "amf_fqdn": "amf"
+}
+

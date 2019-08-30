@@ -1,0 +1,63 @@
+#!/bin/bash
+# Tool to manage multiple related docker containers
+# Copyright (C) 2019 Casa Systems, Inc.  All Rights Reserved.
+
+# Use this script to bring up/down multiple docker containers as a group
+# for integration testing. Also used to simplify access to those containers
+# once they have been started. Recommended to place a copy of this file on
+# the user's $PATH. Usage examples:
+#   dcomp up -d
+#   dcomp down
+#   dcomp exec smfsm bash
+
+# This script is based on docker-compose and uses the configuration file
+# docker-compose.yml in the current working directory to select which containers
+# to manage. Multiple groups of containers may be used concurrently. They are
+# named by the current user name "$USER" and the working directory "$(pwd)".
+# The configuration file identifies the services to be run. Access those
+# services using this script and the service names in the configuration file.
+
+# The script also reads the file "imagenames" to obtain the environment variables
+# that denote the images to be run. Each line should have the form "export XXX_IMG=<path>,
+# where XXX is the name of the image. The images are REDIS, ETCD, PFCP, UPF, UDM, SMFSM,
+# and AMF. Default values will be used (see docker-compose.yml) where needed.
+# Example:
+#   export PFCP_IMG=pfcp.rar
+#   export UPF_IMG=sim-upf.rar
+#   export UDM_IMG=sim-udm
+#   export SMFSM_IMG=sm.rar
+#   export AMF_IMG=sim-amf.rar
+
+# Note that "$USER" can be changed if a single user needs to run more than one
+# container group concurrently.
+
+# The network used by these containers is cached in the file "rndnet". If this
+# file exists, use the environment variable definition it contains to set the
+# IP network. Delete this file before starting a container group in order to
+# allocate a different network.
+[[ -f rndnet ]] && source rndnet
+
+# If the image names file exists, read it to set the environment variables for
+# non-default image names.
+[[ -f imagenames ]] && source imagenames
+
+# If the container network has not been defined, select one from the whitelist
+# and cache it in the file "rndnet". This code selects the network randomly
+# from 172.24.X.0/24 through 172.31.X.0/24. Note that it is possible for
+# collisions to occur, but they should be rare. Managing allocated networks
+# to avoid all collisions is TBD.
+if [ -z "$RNDNET" ]; then
+    netnum=$RANDOM
+    # upper part of network number is range 24-31
+    A=$((($netnum>>8)&0x0007|0x0018))
+    # lower part of network number is range 0-255
+    B=$(($netnum%256))
+    export RNDNET=172.$A.$B.0/24
+    echo "creating new random network"
+    echo "# temporary file containing a randomly generated docker subnet" >rndnet
+    echo "export RNDNET=$RNDNET" >>rndnet
+fi
+
+# Run the docker-compose command using the parameters supplied on the command line.
+echo "using network $RNDNET"
+docker-compose -p $USER-$(basename $(pwd)) "$@"

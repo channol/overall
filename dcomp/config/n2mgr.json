@@ -1,0 +1,89 @@
+{
+	"AmfConfig": {
+		"amf-name":       "amf",
+		"mcc":            "450",
+		"mnc":            "05",
+		"amf-region-id":  1,
+		"amf-set-id":     1,
+		"amf-pointer":    1,
+		"inst-id":        "amf",
+		"tcp-port":       80
+	},
+	"TaiList": [
+		{
+			"PlmnId": [
+				{
+					"mcc": "450",
+					"mnc": "05"
+				},
+				{
+					"mcc": "450",
+					"mnc": "06"
+				}
+			],
+			"Tacs": [
+                {
+                    "tac": "10f050"
+                },
+				{
+					"tac": "001234"
+				},
+				{
+					"tac": "002345"
+				}
+			],
+			"SingleNssais": [
+                {
+                    "sst": 1
+                },
+				{
+					"sst": 1,
+					"sd": "abd001"
+				},
+				{
+					"sst": 3,
+					"sd": "abd003"
+				}
+			]
+		}
+	],
+	"N2Svc": {
+		"time-to-wait":   1,
+		"rel-amf-cap":    1
+	},
+	"Db": {
+		"host":           "redis",
+		"tcp-port":       6379
+	},
+	"Uemgr": [
+		{
+			"inst-id":    "uemgr",
+			"host":       "uemgr",
+			"tcp-port":    80,
+			"version":    "v1",
+			"scheme":     "http"
+		}
+	],
+	"Sctpmgr": [
+		{
+			"inst-id":   "sctpmgr",
+			"host":       "sctpmgr",
+			"tcp-port":    80,
+			"version":    "v1",
+			"scheme":     "http"
+		}
+	],
+	"Nn2Config": {
+		"inst-id":      "n2mgr",
+		"host":         "n2mgr",
+		"tcp-port":     80,
+		"version":      "v1",
+		"scheme":       "http"
+	},
+	"ip-addr-resolve":    "true",
+	"security":           "",
+	"log-level":          "debug",
+	"Node-Exporter": {
+		"port" : 9094
+	}
+}

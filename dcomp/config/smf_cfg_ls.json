@@ -1,0 +1,168 @@
+{
+  "svc_fqdn": "smfsm",
+  "svc_port": 80,
+  "smf_id": "smfsm",
+  "db_addr": "redis",
+  "db_port": 6379,
+  "metric_port": 80,
+  "metric_path": "/metrics",
+  "etcd_addr": "etcd",
+  "etcd_port": 2379,
+  "n4_port": 8805,
+  "pfcp_svc_fqdn": "pfcp",
+  "pfcp_svc_port": 50051,
+  "pfcp_port": 50051,
+  "udm_svc_fqdn": "172.1.10.30",
+  "udm_svc_port": 80,
+  "nrf_svc_fqdn": "nrf",
+  "nrf_svc_port": 80,
+  "log_level": "debug",
+  "log_ifmask": "db|nsmf|namf|npcf|nchf|nnrf|nssf|nudm|gtpc|pfcp|nas|ngap|etcd|mgmt",
+  "procedure_timer":10,
+  "slice_infos": [{
+    "sNssai": {
+      "sst": 1,
+      "sd": "abd001"
+    },
+    "dnns": [{
+      "dnn": "inet1",
+      "upf_infos": [{
+        "upf_instance_id": "static-upf1",
+        "upf_addr": "5.1.1.38",
+        "ip_pool": [{
+          "name": "v4_pool",
+          "cidr": "11.11.0.1/16"
+        }]
+      }],
+      "pcf_svc_fqdn": "stub",
+      "pcf_port": 8080,
+      "chf_svc_fqdn": "stub",
+      "chf_port": 5848,
+      "udm_svc_fqdn": "172.1.10.30",
+      "udm_svc_port": 80 
+    }]
+  },{
+    "sNssai": {
+      "sst": 1,
+      "sd": "123ABC"
+    },
+    "dnns": [{
+      "dnn": "inet1",
+      "upf_infos": [{
+        "upf_instance_id": "static-upf1",
+        "upf_addr": "5.1.1.38",
+        "ip_pool": [{
+          "name": "v4_pool",
+          "cidr": "11.11.0.1/16"
+        }]
+      }],
+      "pcf_svc_fqdn": "stub",
+      "pcf_port": 8080,
+      "chf_svc_fqdn": "stub",
+      "chf_port": 5848
+    }]
+  }, {
+    "sNssai": {
+      "sst": 11,
+      "sd": "sd"
+    },
+    "dnns": [{
+      "dnn": "internet",
+      "upf_infos": [{
+        "upf_instance_id": "static-upf2",
+        "upf_addr": "5.1.1.38",
+        "ip_pool": [{
+          "name": "v4_internet",
+          "cidr": "10.10.0.1/24"
+        }]
+      }],
+      "pcf_svc_fqdn": "stub",
+      "pcf_port": 8080,
+      "chf_svc_fqdn": "stub",
+      "chf_port": 5848
+    }]
+  }, {
+    "sNssai": {
+      "sst": 12,
+      "sd": "sd"
+    },
+    "dnns": [{
+      "dnn": "URLLC",
+      "upf_infos": [{
+        "upf_instance_id": "static-upf3",
+        "upf_addr": "5.1.1.38",
+        "ip_pool": [{
+          "name": "v4_URLLC",
+          "cidr": "10.20.0.1/24"
+        }]
+      }],
+      "pcf_svc_fqdn": "stub",
+      "pcf_port": 8080,
+      "chf_svc_fqdn": "stub",
+      "chf_port": 5848
+    }, {
+      "dnn": "eMBB",
+      "upf_infos": [{
+        "upf_instance_id": "static-upf4",
+        "upf_addr": "5.1.1.38",
+        "ip_pool": [{
+          "name": "v4_eMBB",
+          "cidr": "10.30.0.1/24"
+        }]
+      }],
+      "pcf_svc_fqdn": "stub",
+      "pcf_port": 8080,
+      "chf_svc_fqdn": "stub",
+      "chf_port": 5848
+    }]
+  }],
+  "ltmap": [{
+      "locality": "DC-1",
+      "taiList": [{
+        "plmnId": {
+          "mcc": "450",
+          "mnc": "05"
+        },
+        "tac": "ABCD11"
+      }, {
+        "plmnId": {
+          "mcc": "450",
+          "mnc": "05"
+        },
+        "tac": "ABCD22"
+      }]
+    },
+    {
+      "locality": "DC-2",
+      "taiList": [{
+        "plmnId": {
+          "mcc": "450",
+          "mnc": "05"
+        },
+        "tac": "ABCD33"
+      }, {
+        "plmnId": {
+          "mcc": "450",
+          "mnc": "05"
+        },
+        "tac": "ABCD44"
+      }]
+    },
+    {
+      "locality": "DC-3",
+      "taiList": [{
+        "plmnId": {
+          "mcc": "222",
+          "mnc": "200"
+        },
+        "tac": "24B"
+      }, {
+        "plmnId": {
+          "mcc": "222",
+          "mnc": "200"
+        },
+        "tac": "25"
+      }]
+    }
+  ]
+}

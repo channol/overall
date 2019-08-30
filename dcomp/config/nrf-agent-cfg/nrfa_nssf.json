@@ -1,0 +1,91 @@
+{
+  "dbURL": "redis:6379",
+  "nrfServiceURL": "sim-nrf:90",
+  "monitoringK8sService": "nssf.svc.cluster.local",
+  "nfProfile": {
+    "nfInstanceID": "nssf1",
+    "nfType": "NSSF",
+    "nfStatus": "REGISTERED",
+    "heartBeatTimer": 100,
+    "plmnList": [
+      {
+        "mcc": "460",
+        "mnc": "01"
+      }
+    ],
+    "sNssais": [
+      {
+        "sst": 1,
+        "sd": "slice1"
+      },
+      {
+        "sst": 2,
+        "sd": "slice1"
+      }
+    ],
+    "nsiList": [
+      "nsiList0",
+      "nsiList1"
+    ],
+    "fqdn": "nssf-fqdn",
+    "interPlmnFqdn": "NFProfile-inter_plmn_fqdn",
+    "ipv4Addresses": [
+      "192.168.10.10",
+      "1.1.1.1"
+    ],
+    "ipv6Addresses": [
+      "2001::0:0:0:0",
+      "2001::1:1:1:1"
+    ],
+    "ipv6Prefixes": [
+      "24",
+      "68"
+    ],
+    "capacity": 88,
+    "load": 10,
+    "locality": "locatlity",
+    "nfServices": [
+      {
+        "serviceInstanceID": "nssf1-instance-id",
+        "serviceName": "nssf-svc-name",
+        "versions": [
+          {
+            "apiVersionInUri": "ver_in_uri",
+            "apiFullVersion": "full-ver",
+            "expiry": "2020-04-01T12:00:00Z"
+          }
+        ],
+        "scheme": "http",
+        "nfServiceStatus": "REGISTERED",
+        "fqdn": "nssf-fqdn",
+        "interPlmnFqdn": "inter-plmn-fqdn",
+        "ipEndPoints": [
+          {
+            "ipv4Address": "1.1.1.1",
+            "transport": "TCP"
+          }
+        ],
+        "apiPrefix": "api_prefix",
+        "defaultNotificationSubscriptions": [
+          {
+            "notificationType": "N2_INFORMATION",
+            "callbackUri": "cb-uri",
+            "n1MessageClass": "5GMM",
+            "n2InformationClass": "NRPPa"
+          }
+        ],
+        "allowedPlmns": [
+          {
+            "mcc": "460",
+            "mnc": "01"
+          }
+        ]
+      }
+    ],
+    "allowedNfDomains": [
+      "pattern"
+    ],
+    "recoveryTime": "2019-04-01T12:00:00Z",
+    "supportedFeatures": "1A"
+  }
+}

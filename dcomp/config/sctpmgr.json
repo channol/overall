@@ -1,0 +1,15 @@
+{
+    "N2Config" : [
+     {
+         "inst-id" : "n2mgr",
+         "host" : "n2mgr",
+         "tcp-port" : 80,
+         "version" : "v1",
+         "scheme" : "http"
+     },
+     {
+         "inst-id" : "n2mgr1",
+         "host" : "n2mgr1"
+     }
+     ]
+}

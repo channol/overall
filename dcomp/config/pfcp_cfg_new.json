@@ -1,0 +1,40 @@
+{
+    "smf_svc_fqdn": "smfsm",
+    "smf_svc_port": 50051,
+    "etcd_addr": "etcd",
+    "etcd_port": 2379,
+    "db_addr": "redis",
+    "db_port": 6379,
+    "metric_path": "/metrics",
+    "metric_port": 80,
+    "log_level": "debug",
+    "pfcp": {
+        "ip": "pfcp",
+        "publicip": "12.12.12.10",
+        "port": 8805,
+        "tmr":{
+            "t1": 1000,
+            "n1": 3,
+            "t2": 4000,
+            "gd": 4000,
+            "hb": 5000
+        }
+    },
+    "upf": [
+        {
+            "id": "upf01",
+            "addr": "5.1.1.38",
+            "port": 8805
+        },
+        {
+            "id": "upf2",
+            "addr": "172.0.10.216",
+            "port": 8805
+        },
+        {
+            "id": "upf3",
+            "addr": "172.0.10.216",
+            "port": 8805
+        }
+    ]
+}

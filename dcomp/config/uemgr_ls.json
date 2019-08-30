@@ -1,0 +1,236 @@
+{
+    "AmfConfig": {
+        "mcc": "450",
+        "mnc": "05",
+        "amf-region-id": 1,
+        "amf-set-id": 1,
+        "amf-pointer": 1,
+        "inst-id": "amf",
+        "tcp-port": "80"
+    },
+    "UeMgr": {
+        "host": "uemgr",
+        "inst-id": "uemgr"
+    },
+    "DbConfig": {
+        "host": "redis",
+        "tcp-port": 6379
+    },
+    "AusfConfig": {
+        "ausf": [
+            {
+                "inst-id": "sim-ausf",
+                "host": "172.1.10.29",
+                "tcp-port": 80,
+                "version": "v1",
+                "scheme": "http",
+                "plmnid-list": [
+                    {
+                        "mcc": "450",
+                        "mnc": "05"
+                    },
+                    {
+                        "mcc": "460",
+                        "mnc": "01"
+                    }
+                ],
+                "ri-list": [
+                    "abcd",
+                    "4567"
+                ],
+                "group-id": "12345678",
+                "supi-range-list":[
+                    {
+                        "start": "450051234000000",
+                        "end": "450051234999999",
+                        "pattern": "^imsi-450051234[0-9]{6}$"
+                    },
+                    {
+                        "start": "53216",
+                        "end": "63541",
+                        "pattern": "^[0-9]{5}$"
+                    }
+                ]
+            },
+            {
+                "inst-id": "sim-ausf",
+                "host": "172.1.10.29",
+                "tcp-port": 80,
+                "version": "v1",
+                "scheme": "http",
+                "plmnid-list": [
+                    {
+                        "mcc": "450",
+                        "mnc": "06"
+                    },
+                    {
+                        "mcc": "322",
+                        "mnc": "287"
+                    }
+                ],
+                "ri-list": [
+                    "abcd",
+                    "4567"
+                ],
+                "group-id": "12345678",
+                "supi-range-list":[
+                    {
+                        "start": "450051234000000",
+                        "end": "450051234999999",
+                        "pattern": "^imsi-450051234[0-9]{6}$"
+                    },
+                    {
+                        "start": "53216",
+                        "end": "63541",
+                        "pattern": "^[0-9]{5}$"
+                    }
+                ]
+            }
+        ],
+        "default-ausf": {
+            "inst-id": "sim-ausf",
+            "host": "172.1.10.29"
+        }
+    },
+    "UdmConfig": {
+        "udm": [
+            {
+                "inst-id": "udm",
+                "host": "172.1.10.30",
+                "tcp-port": 80,
+                "version": "v1",
+                "scheme": "http",
+                "group-id": "12345",
+                "supi-range-list":[
+                    {
+                        "start": "450051234000000",
+                        "end": "450051234999999",
+                        "pattern": "^imsi-450051234[0-9]{6}$"
+                    }
+                ],
+                "plmnid-list": [
+                    {
+                        "mcc": "450",
+                        "mnc": "16"
+                    },
+                    {
+                        "mcc": "450",
+                        "mnc": "05"
+                    }
+                ],
+                "ri-list": [
+                    "4567"
+                ]
+            }
+        ],
+        "default-udm": {
+            "inst-id": "udm",
+            "host": "172.1.10.30",
+            "tcp-port": 80,
+            "version": "v1",
+            "scheme": "http"
+        }
+    },
+    "PcfConfig": {
+        "host": "172.1.10.31",
+        "tcp-port": 80
+    },
+    "nrfConfig": {
+        "priority": 0,
+        "config": [
+            {
+                "plmn": [
+                    {
+                        "mcc": "450",
+                        "mnc": "16"
+                    },
+                    {
+                        "mcc": "450",
+                        "mnc": "05"
+                    }
+                ],
+                "default-nrf": [
+                    {
+                        "inst-id": "nrf",
+                        "host": "nrf",
+                        "tcp-port": 80,
+                        "version": "v1",
+                        "scheme": "http"
+                    }
+                ]
+            },
+            {
+                "plmn": [
+                    {
+                        "mcc": "450",
+                        "mnc": "06"
+                    }
+                ],
+                "default-nrf": [
+                    {
+                        "inst-id": "nrf",
+                        "host": "nrf"
+                    }
+                ]
+            }
+        ]
+    },
+    "smfConfig": {
+        "smf": [
+            {
+                "inst-id": "smfsm",
+                "host": "172.24.14.11",
+                "tcp-port": 80,
+                "version": "v1",
+                "scheme": "http",
+                "dnn": "inet1",
+                "snssai-sst": 1,
+                "snssai-sd": "abd001",
+                "access-type": "3GPP",
+                "is-eps-interwork": true
+            },
+            {
+                "inst-id": "smf-sos",
+                "host": "smf-emergency",
+                "tcp-port": 80,
+                "version": "v1",
+                "scheme": "http",
+                "dnn": "sos",
+                "snssai-sst": 2,
+                "snssai-sd": "abd001",
+                "access-type": "3GPP",
+                "is-eps-interwork": true
+            }
+        ],
+        "default-smf": {
+            "inst-id": "smfsm",
+            "host": "172.24.14.11"
+        }
+    },
+    "n2Config": [
+        {
+            "inst-id": "n2mgr",
+            "host": "n2mgr",
+            "tcp-port": 80,
+            "version": "v1",
+            "scheme": "http"
+        }
+    ],
+    "nssfConfig": [
+        {
+            "inst-id": "nssf",
+            "host": "nssf",
+            "tcp-port": 80,
+            "version": "v1",
+            "scheme": "http"
+        },
+        {
+            "inst-id": "nssf",
+            "host": "nssf"
+        }
+    ],
+    "log-level": "all",
+    "Node-Exporter": {
+        "port": 9095
+    }
+}

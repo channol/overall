@@ -1,0 +1,12 @@
+server_ip: 0.0.0.0
+server_port: '80'
+db_ip: rediscluster
+db_port: '7000'
+heart_beat_interval: '60'
+service_name: nrf
+validity_interval: '30'
+log_level : debug
+version: 1.0.0
+plmns:
+  - {mcc: '450',mnc: '05'}
+  - {mcc: '311',mnc: '270'}
