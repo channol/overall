@@ -33,7 +33,7 @@ def child_upf():
 @pytest.fixture(scope = 'module')
 def ue_ip(get_test_id,smf_ip):
     if get_test_id and smf_ip:
-        for i in range(10):
+        for i in range(5):
             logging.info('try get ue ip times: '+str(i))
             ue_ip = NF.smf_get_session(smf_ip,get_parameter('supi'),get_parameter('pdu_id'))
             if ue_ip:
@@ -69,7 +69,7 @@ def test_landslide_case_measurements_1(get_test_id):
 
 def test_landslide_case_continue(get_test_id):
     if get_test_id:
-        for i in range(10):
+        for i in range(5):
             logging.info('try continue landslide case times: '+str(i))
             ls = Landslide.case_state(get_test_id)
             if ls == '5_Waiting':
@@ -99,7 +99,7 @@ def test_landslide_case_measurements_2(get_test_id):
 
 def test_landslide_case_delete(get_test_id):
     if get_test_id:
-        for i in range(10):
+        for i in range(5):
             logging.info('try delete landslide case times: '+str(i))
             ls = Landslide.case_state(get_test_id)
             if ls == 'COMPLETE' or ls == 'COMPLETE_ERROR':
