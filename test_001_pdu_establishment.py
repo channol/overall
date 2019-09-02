@@ -47,6 +47,9 @@ def ue_ip(get_test_id,smf_ip):
 def test_landslide_case_start(get_test_id):
     assert get_test_id, "landslide is running a case!"
 
+def test_smf_ip(smf_ip):
+    assert smf_ip, "can not get smf ip!"
+
 def test_ue_ip(ue_ip):
     assert ue_ip, "can not get ue ip!"
 
