@@ -57,6 +57,13 @@ def test_upf_session_rule(child_upf,ue_ip):
             NF.upf_session_rule(child_upf,ue_ip,rule)
     NF.upf_close(child_upf)
 
+def test_landslide_case_measurements(get_test_id):
+    if get_test_id:
+        logging.info('post measurements of landslide case times: ')
+        Landslide.case_measurements(get_test_id)
+    else:
+        return False
+
 def test_landslide_case_continue(get_test_id):
     if get_test_id:
         for i in range(10):
