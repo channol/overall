@@ -1,229 +1,234 @@
-INFO     root:config.py:23 ===start to capture===
-INFO     root:landslide.py:39 post the url: http://10.133.6.19:8080/api/runningTests/
-INFO     root:landslide.py:40 <Response [201]>
-INFO     root:landslide.py:91 {
-   "errorsAndWarnings": [
-      { "ts": 0, "tc": 0, "errorsAndWarnings": [
-
-         "AMF Nodal - Enable Vo5G [VolteEn=null->false] set to default value",
-         "AMF Nodal - Enable N3IWF [N3iwfEn] removed, not allowed",
-         "AMF Nodal - SMSo5G Enabled [ShortMsgSvcEn=null->false] set to default value"
-         ]
-      }
-   ],
-   "url": "http://10.133.6.19:8080/api/runningTests/179",
-   "id": "179",
-   "library": 10828,
-   "name": "case_001_pdu_establishment",
-   "user": "qinglong",
-   "testStateOrStep": "INIT"
+INFO     root:landslide.py:171 delete the url: http://10.133.6.19:8080/api/runningTests/340?action=delete
+INFO     root:landslide.py:172 <Response [404]>
+ERROR    root:landslide.py:174 check the url and session
+ERROR    root:landslide.py:175 {
+  "code": "404",
+  "apiCode": 404203,
+  "reason": "Running Test Not Found with RUN ID: 340",
+  "url": "http://10.133.6.19:8080/api/runningTests/340?action=delete"
 }
 
-INFO     root:landslide.py:93 test id is : 179
-INFO     root:test_001_pdu_establishment.py:24 smf ip: 172.24.14.11
-INFO     root:test_001_pdu_establishment.py:37 try get ue ip times: 0
-INFO     root:NF.py:33 http://172.24.14.11:80/mgmt/v1/session/imsi-450051234000000/7
-ERROR    root:NF.py:44 get smf ue session failure!
-ERROR    root:NF.py:45 
-INFO     root:test_001_pdu_establishment.py:37 try get ue ip times: 1
-INFO     root:NF.py:33 http://172.24.14.11:80/mgmt/v1/session/imsi-450051234000000/7
-ERROR    root:NF.py:44 get smf ue session failure!
-ERROR    root:NF.py:45 
-INFO     root:test_001_pdu_establishment.py:37 try get ue ip times: 2
-INFO     root:NF.py:33 http://172.24.14.11:80/mgmt/v1/session/imsi-450051234000000/7
-ERROR    root:NF.py:44 get smf ue session failure!
-ERROR    root:NF.py:45 
-INFO     root:test_001_pdu_establishment.py:37 try get ue ip times: 3
-INFO     root:NF.py:33 http://172.24.14.11:80/mgmt/v1/session/imsi-450051234000000/7
-ERROR    root:NF.py:44 get smf ue session failure!
-ERROR    root:NF.py:45 
-INFO     root:test_001_pdu_establishment.py:37 try get ue ip times: 4
-INFO     root:NF.py:33 http://172.24.14.11:80/mgmt/v1/session/imsi-450051234000000/7
-ERROR    root:NF.py:44 get smf ue session failure!
-ERROR    root:NF.py:45 
-INFO     root:test_001_pdu_establishment.py:37 try get ue ip times: 5
-INFO     root:NF.py:33 http://172.24.14.11:80/mgmt/v1/session/imsi-450051234000000/7
-ERROR    root:NF.py:44 get smf ue session failure!
-ERROR    root:NF.py:45 
-INFO     root:test_001_pdu_establishment.py:37 try get ue ip times: 6
-INFO     root:NF.py:33 http://172.24.14.11:80/mgmt/v1/session/imsi-450051234000000/7
-ERROR    root:NF.py:44 get smf ue session failure!
-ERROR    root:NF.py:45 
-INFO     root:test_001_pdu_establishment.py:37 try get ue ip times: 7
-INFO     root:NF.py:33 http://172.24.14.11:80/mgmt/v1/session/imsi-450051234000000/7
-ERROR    root:NF.py:44 get smf ue session failure!
-ERROR    root:NF.py:45 
-INFO     root:test_001_pdu_establishment.py:37 try get ue ip times: 8
-INFO     root:NF.py:33 http://172.24.14.11:80/mgmt/v1/session/imsi-450051234000000/7
-ERROR    root:NF.py:44 get smf ue session failure!
-ERROR    root:NF.py:45 
-INFO     root:test_001_pdu_establishment.py:37 try get ue ip times: 9
-INFO     root:NF.py:33 http://172.24.14.11:80/mgmt/v1/session/imsi-450051234000000/7
-ERROR    root:NF.py:44 get smf ue session failure!
-ERROR    root:NF.py:45 
-INFO     root:test_001_pdu_establishment.py:42 ue ip: False
-INFO     root:test_001_pdu_establishment.py:63 try continue landslide case times: 0
-INFO     root:landslide.py:150 get the url: http://10.133.6.19:8080/api/runningTests/179
-INFO     root:landslide.py:151 <Response [200]>
-INFO     root:landslide.py:154 test id: 179
-INFO     root:landslide.py:155 
-
-INFO     root:landslide.py:156 test CriteriaStatus: FAILED
-INFO     root:landslide.py:157 
-
-INFO     root:landslide.py:158 test StateOrStep: COMPLETE_ERROR
-INFO     root:test_001_pdu_establishment.py:63 try continue landslide case times: 1
-INFO     root:landslide.py:150 get the url: http://10.133.6.19:8080/api/runningTests/179
-INFO     root:landslide.py:151 <Response [200]>
-INFO     root:landslide.py:154 test id: 179
-INFO     root:landslide.py:155 
-
-INFO     root:landslide.py:156 test CriteriaStatus: FAILED
-INFO     root:landslide.py:157 
-
-INFO     root:landslide.py:158 test StateOrStep: COMPLETE_ERROR
-INFO     root:test_001_pdu_establishment.py:63 try continue landslide case times: 2
-INFO     root:landslide.py:150 get the url: http://10.133.6.19:8080/api/runningTests/179
-INFO     root:landslide.py:151 <Response [200]>
-INFO     root:landslide.py:154 test id: 179
-INFO     root:landslide.py:155 
-
-INFO     root:landslide.py:156 test CriteriaStatus: FAILED
-INFO     root:landslide.py:157 
-
-INFO     root:landslide.py:158 test StateOrStep: COMPLETE_ERROR
-INFO     root:test_001_pdu_establishment.py:63 try continue landslide case times: 3
-INFO     root:landslide.py:150 get the url: http://10.133.6.19:8080/api/runningTests/179
-INFO     root:landslide.py:151 <Response [200]>
-INFO     root:landslide.py:154 test id: 179
-INFO     root:landslide.py:155 
-
-INFO     root:landslide.py:156 test CriteriaStatus: FAILED
-INFO     root:landslide.py:157 
-
-INFO     root:landslide.py:158 test StateOrStep: COMPLETE_ERROR
-INFO     root:test_001_pdu_establishment.py:63 try continue landslide case times: 4
-INFO     root:landslide.py:150 get the url: http://10.133.6.19:8080/api/runningTests/179
-INFO     root:landslide.py:151 <Response [200]>
-INFO     root:landslide.py:154 test id: 179
-INFO     root:landslide.py:155 
-
-INFO     root:landslide.py:156 test CriteriaStatus: FAILED
-INFO     root:landslide.py:157 
-
-INFO     root:landslide.py:158 test StateOrStep: COMPLETE_ERROR
-INFO     root:test_001_pdu_establishment.py:63 try continue landslide case times: 5
-INFO     root:landslide.py:150 get the url: http://10.133.6.19:8080/api/runningTests/179
-INFO     root:landslide.py:151 <Response [200]>
-INFO     root:landslide.py:154 test id: 179
-INFO     root:landslide.py:155 
-
-INFO     root:landslide.py:156 test CriteriaStatus: FAILED
-INFO     root:landslide.py:157 
-
-INFO     root:landslide.py:158 test StateOrStep: COMPLETE_ERROR
-INFO     root:test_001_pdu_establishment.py:63 try continue landslide case times: 6
-INFO     root:landslide.py:150 get the url: http://10.133.6.19:8080/api/runningTests/179
-INFO     root:landslide.py:151 <Response [200]>
-INFO     root:landslide.py:154 test id: 179
-INFO     root:landslide.py:155 
-
-INFO     root:landslide.py:156 test CriteriaStatus: FAILED
-INFO     root:landslide.py:157 
-
-INFO     root:landslide.py:158 test StateOrStep: COMPLETE_ERROR
-INFO     root:test_001_pdu_establishment.py:63 try continue landslide case times: 7
-INFO     root:landslide.py:150 get the url: http://10.133.6.19:8080/api/runningTests/179
-INFO     root:landslide.py:151 <Response [200]>
-INFO     root:landslide.py:154 test id: 179
-INFO     root:landslide.py:155 
-
-INFO     root:landslide.py:156 test CriteriaStatus: FAILED
-INFO     root:landslide.py:157 
-
-INFO     root:landslide.py:158 test StateOrStep: COMPLETE_ERROR
-INFO     root:test_001_pdu_establishment.py:63 try continue landslide case times: 8
-INFO     root:landslide.py:150 get the url: http://10.133.6.19:8080/api/runningTests/179
-INFO     root:landslide.py:151 <Response [200]>
-INFO     root:landslide.py:154 test id: 179
-INFO     root:landslide.py:155 
-
-INFO     root:landslide.py:156 test CriteriaStatus: FAILED
-INFO     root:landslide.py:157 
-
-INFO     root:landslide.py:158 test StateOrStep: COMPLETE_ERROR
-INFO     root:test_001_pdu_establishment.py:63 try continue landslide case times: 9
-INFO     root:landslide.py:150 get the url: http://10.133.6.19:8080/api/runningTests/179
-INFO     root:landslide.py:151 <Response [200]>
-INFO     root:landslide.py:154 test id: 179
-INFO     root:landslide.py:155 
-
-INFO     root:landslide.py:156 test CriteriaStatus: FAILED
-INFO     root:landslide.py:157 
-
-INFO     root:landslide.py:158 test StateOrStep: COMPLETE_ERROR
-INFO     root:test_001_pdu_establishment.py:78 post measurements of landslide case times: 0
-INFO     root:landslide.py:150 get the url: http://10.133.6.19:8080/api/runningTests/179
-INFO     root:landslide.py:151 <Response [200]>
-INFO     root:landslide.py:154 test id: 179
-INFO     root:landslide.py:155 
-
-INFO     root:landslide.py:156 test CriteriaStatus: FAILED
-INFO     root:landslide.py:157 
-
-INFO     root:landslide.py:158 test StateOrStep: COMPLETE_ERROR
-INFO     root:landslide.py:186 get the url: http://10.133.6.19:8080/api/runningTests/179/measurements
-INFO     root:landslide.py:187 <Response [200]>
-INFO     root:landslide.py:193 {
-   "interval":0,
-   "elapsedTime":null,
-   "actualTime":null,
-   "iteration":null,
-   "tabs": {
-      "Pass-Fail History": {
-        "C0 check-sm-pdu-compare": "FAILED",
-        "C1 check-ngap-compare": "FAILED",
-        "C2 check-sm-setup-number": "FAILED",
-        "C3 check-sm-estab-number": "FAILED",
-        "C4 check-ngap-session-number": "FAILED"
-      }
-   }
+INFO     root:landslide.py:171 delete the url: http://10.133.6.19:8080/api/runningTests/341?action=delete
+INFO     root:landslide.py:172 <Response [404]>
+ERROR    root:landslide.py:174 check the url and session
+ERROR    root:landslide.py:175 {
+  "code": "404",
+  "apiCode": 404203,
+  "reason": "Running Test Not Found with RUN ID: 341",
+  "url": "http://10.133.6.19:8080/api/runningTests/341?action=delete"
 }
 
-INFO     root:test_001_pdu_establishment.py:93 try delete landslide case times: 0
-INFO     root:landslide.py:150 get the url: http://10.133.6.19:8080/api/runningTests/179
-INFO     root:landslide.py:151 <Response [200]>
-INFO     root:landslide.py:154 test id: 179
-INFO     root:landslide.py:155 
-
-INFO     root:landslide.py:156 test CriteriaStatus: FAILED
-INFO     root:landslide.py:157 
-
-INFO     root:landslide.py:158 test StateOrStep: COMPLETE_ERROR
-INFO     root:landslide.py:171 delete the url: http://10.133.6.19:8080/api/runningTests/179?action=delete
+INFO     root:landslide.py:171 delete the url: http://10.133.6.19:8080/api/runningTests/342?action=delete
 INFO     root:landslide.py:172 <Response [200]>
 INFO     root:landslide.py:178 {
    "result": "Running test session object deleted",
-   "url": "http://10.133.6.19:8080/api/runningTests/179",
-   "measurementsUrl": "http://10.133.6.19:8080/api/runningTests/179/measurements",
-   "criteriaUrl": "http://10.133.6.19:8080/api/runningTests/179/criteria",
-   "perSessionReportStatusUrl": "http://10.133.6.19:8080/api/runningTests/179/persessionreportstatus",
+   "url": "http://10.133.6.19:8080/api/runningTests/342",
+   "measurementsUrl": "http://10.133.6.19:8080/api/runningTests/342/measurements",
+   "criteriaUrl": "http://10.133.6.19:8080/api/runningTests/342/criteria",
+   "perSessionReportStatusUrl": "http://10.133.6.19:8080/api/runningTests/342/persessionreportstatus",
    "noteToUser": "Be sure to HTTP-DELETE this RESTful API controlled resource when done",
-   "id": 179,
+   "id": 342,
+   "library": 10828,
+   "name": "case_001_pdu_establishment",
+   "user": "qinglong",
+   "criteriaStatus": "FAILED",
+   "testStateOrStep": "COMPLETE",
+   "resultFilesList": [
+      "http://10.133.6.19/results/qinglong/19-09-01_22.13.47__RID-342__case_001_pdu_establishment.log.txt",
+      "http://10.133.6.19/results/qinglong/19-09-01_22.13.47__RID-342__case_001_pdu_establishment.xls",
+      "http://10.133.6.19/results/qinglong/19-09-01_22.13.47__RID-342__ts0_eth1_capture.pcap"
+    ]
+}
+
+INFO     root:landslide.py:171 delete the url: http://10.133.6.19:8080/api/runningTests/343?action=delete
+INFO     root:landslide.py:172 <Response [404]>
+ERROR    root:landslide.py:174 check the url and session
+ERROR    root:landslide.py:175 {
+  "code": "404",
+  "apiCode": 404203,
+  "reason": "Running Test Not Found with RUN ID: 343",
+  "url": "http://10.133.6.19:8080/api/runningTests/343?action=delete"
+}
+
+INFO     root:landslide.py:171 delete the url: http://10.133.6.19:8080/api/runningTests/344?action=delete
+INFO     root:landslide.py:172 <Response [404]>
+ERROR    root:landslide.py:174 check the url and session
+ERROR    root:landslide.py:175 {
+  "code": "404",
+  "apiCode": 404203,
+  "reason": "Running Test Not Found with RUN ID: 344",
+  "url": "http://10.133.6.19:8080/api/runningTests/344?action=delete"
+}
+
+INFO     root:landslide.py:171 delete the url: http://10.133.6.19:8080/api/runningTests/345?action=delete
+INFO     root:landslide.py:172 <Response [404]>
+ERROR    root:landslide.py:174 check the url and session
+ERROR    root:landslide.py:175 {
+  "code": "404",
+  "apiCode": 404203,
+  "reason": "Running Test Not Found with RUN ID: 345",
+  "url": "http://10.133.6.19:8080/api/runningTests/345?action=delete"
+}
+
+INFO     root:landslide.py:171 delete the url: http://10.133.6.19:8080/api/runningTests/346?action=delete
+INFO     root:landslide.py:172 <Response [404]>
+ERROR    root:landslide.py:174 check the url and session
+ERROR    root:landslide.py:175 {
+  "code": "404",
+  "apiCode": 404203,
+  "reason": "Running Test Not Found with RUN ID: 346",
+  "url": "http://10.133.6.19:8080/api/runningTests/346?action=delete"
+}
+
+INFO     root:landslide.py:171 delete the url: http://10.133.6.19:8080/api/runningTests/347?action=delete
+INFO     root:landslide.py:172 <Response [200]>
+INFO     root:landslide.py:178 {
+   "result": "Running test session object deleted",
+   "url": "http://10.133.6.19:8080/api/runningTests/347",
+   "measurementsUrl": "http://10.133.6.19:8080/api/runningTests/347/measurements",
+   "criteriaUrl": "http://10.133.6.19:8080/api/runningTests/347/criteria",
+   "perSessionReportStatusUrl": "http://10.133.6.19:8080/api/runningTests/347/persessionreportstatus",
+   "noteToUser": "Be sure to HTTP-DELETE this RESTful API controlled resource when done",
+   "id": 347,
    "library": 10828,
    "name": "case_001_pdu_establishment",
    "user": "qinglong",
    "criteriaStatus": "FAILED",
    "testStateOrStep": "COMPLETE_ERROR",
    "resultFilesList": [
-      "http://10.133.6.19/results/qinglong/19-08-29_09.54.50__RID-179__case_001_pdu_establishment.log.txt",
-      "http://10.133.6.19/results/qinglong/19-08-29_09.54.50__RID-179__case_001_pdu_establishment.xls"
+      "http://10.133.6.19/results/qinglong/19-09-01_22.30.56__RID-347__case_001_pdu_establishment.log.txt",
+      "http://10.133.6.19/results/qinglong/19-09-01_22.30.56__RID-347__case_001_pdu_establishment.xls"
     ]
 }
 
-INFO     root:config.py:27 ===stop to capture===
-INFO     root:config.py:37 scp root@172.0.5.27:/root/overall/log/result2019_08_29_10_54_50/smfsm2019_08_29_10_54_50.log .
-INFO     root:config.py:38 vim scp://root@172.0.5.27//root/overall/log/result2019_08_29_10_54_50/smfsm2019_08_29_10_54_50.log
-INFO     root:config.py:42 scp root@172.0.5.27:/root/overall/log/result2019_08_29_10_54_50/pfcp2019_08_29_10_54_50.log .
-INFO     root:config.py:43 vim scp://root@172.0.5.27//root/overall/log/result2019_08_29_10_54_50/pfcp2019_08_29_10_54_50.log
-INFO     root:config.py:47 scp root@172.0.5.27:/root/overall/log/result2019_08_29_10_54_50/capture2019_08_29_10_54_50.pcap .
+INFO     root:landslide.py:171 delete the url: http://10.133.6.19:8080/api/runningTests/348?action=delete
+INFO     root:landslide.py:172 <Response [404]>
+ERROR    root:landslide.py:174 check the url and session
+ERROR    root:landslide.py:175 {
+  "code": "404",
+  "apiCode": 404203,
+  "reason": "Running Test Not Found with RUN ID: 348",
+  "url": "http://10.133.6.19:8080/api/runningTests/348?action=delete"
+}
+
+INFO     root:landslide.py:171 delete the url: http://10.133.6.19:8080/api/runningTests/349?action=delete
+INFO     root:landslide.py:172 <Response [404]>
+ERROR    root:landslide.py:174 check the url and session
+ERROR    root:landslide.py:175 {
+  "code": "404",
+  "apiCode": 404203,
+  "reason": "Running Test Not Found with RUN ID: 349",
+  "url": "http://10.133.6.19:8080/api/runningTests/349?action=delete"
+}
+
+INFO     root:landslide.py:171 delete the url: http://10.133.6.19:8080/api/runningTests/350?action=delete
+INFO     root:landslide.py:172 <Response [404]>
+ERROR    root:landslide.py:174 check the url and session
+ERROR    root:landslide.py:175 {
+  "code": "404",
+  "apiCode": 404203,
+  "reason": "Running Test Not Found with RUN ID: 350",
+  "url": "http://10.133.6.19:8080/api/runningTests/350?action=delete"
+}
+
+INFO     root:landslide.py:171 delete the url: http://10.133.6.19:8080/api/runningTests/351?action=delete
+INFO     root:landslide.py:172 <Response [404]>
+ERROR    root:landslide.py:174 check the url and session
+ERROR    root:landslide.py:175 {
+  "code": "404",
+  "apiCode": 404203,
+  "reason": "Running Test Not Found with RUN ID: 351",
+  "url": "http://10.133.6.19:8080/api/runningTests/351?action=delete"
+}
+
+INFO     root:landslide.py:171 delete the url: http://10.133.6.19:8080/api/runningTests/352?action=delete
+INFO     root:landslide.py:172 <Response [404]>
+ERROR    root:landslide.py:174 check the url and session
+ERROR    root:landslide.py:175 {
+  "code": "404",
+  "apiCode": 404203,
+  "reason": "Running Test Not Found with RUN ID: 352",
+  "url": "http://10.133.6.19:8080/api/runningTests/352?action=delete"
+}
+
+INFO     root:landslide.py:171 delete the url: http://10.133.6.19:8080/api/runningTests/353?action=delete
+INFO     root:landslide.py:172 <Response [200]>
+INFO     root:landslide.py:178 {
+   "result": "Running test session object deleted",
+   "url": "http://10.133.6.19:8080/api/runningTests/353",
+   "measurementsUrl": "http://10.133.6.19:8080/api/runningTests/353/measurements",
+   "criteriaUrl": "http://10.133.6.19:8080/api/runningTests/353/criteria",
+   "perSessionReportStatusUrl": "http://10.133.6.19:8080/api/runningTests/353/persessionreportstatus",
+   "noteToUser": "Be sure to HTTP-DELETE this RESTful API controlled resource when done",
+   "id": 353,
+   "library": 10828,
+   "name": "case_001_pdu_establishment",
+   "user": "qinglong",
+   "criteriaStatus": "FAILED",
+   "testStateOrStep": "COMPLETE_ERROR",
+   "resultFilesList": [
+      "http://10.133.6.19/results/qinglong/19-09-02_01.05.08__RID-353__case_001_pdu_establishment.log.txt",
+      "http://10.133.6.19/results/qinglong/19-09-02_01.05.08__RID-353__case_001_pdu_establishment.xls"
+    ]
+}
+
+INFO     root:landslide.py:171 delete the url: http://10.133.6.19:8080/api/runningTests/354?action=delete
+INFO     root:landslide.py:172 <Response [404]>
+ERROR    root:landslide.py:174 check the url and session
+ERROR    root:landslide.py:175 {
+  "code": "404",
+  "apiCode": 404203,
+  "reason": "Running Test Not Found with RUN ID: 354",
+  "url": "http://10.133.6.19:8080/api/runningTests/354?action=delete"
+}
+
+INFO     root:landslide.py:171 delete the url: http://10.133.6.19:8080/api/runningTests/355?action=delete
+INFO     root:landslide.py:172 <Response [404]>
+ERROR    root:landslide.py:174 check the url and session
+ERROR    root:landslide.py:175 {
+  "code": "404",
+  "apiCode": 404203,
+  "reason": "Running Test Not Found with RUN ID: 355",
+  "url": "http://10.133.6.19:8080/api/runningTests/355?action=delete"
+}
+
+INFO     root:landslide.py:171 delete the url: http://10.133.6.19:8080/api/runningTests/356?action=delete
+INFO     root:landslide.py:172 <Response [404]>
+ERROR    root:landslide.py:174 check the url and session
+ERROR    root:landslide.py:175 {
+  "code": "404",
+  "apiCode": 404203,
+  "reason": "Running Test Not Found with RUN ID: 356",
+  "url": "http://10.133.6.19:8080/api/runningTests/356?action=delete"
+}
+
+INFO     root:landslide.py:171 delete the url: http://10.133.6.19:8080/api/runningTests/357?action=delete
+INFO     root:landslide.py:172 <Response [404]>
+ERROR    root:landslide.py:174 check the url and session
+ERROR    root:landslide.py:175 {
+  "code": "404",
+  "apiCode": 404203,
+  "reason": "Running Test Not Found with RUN ID: 357",
+  "url": "http://10.133.6.19:8080/api/runningTests/357?action=delete"
+}
+
+INFO     root:landslide.py:171 delete the url: http://10.133.6.19:8080/api/runningTests/358?action=delete
+INFO     root:landslide.py:172 <Response [404]>
+ERROR    root:landslide.py:174 check the url and session
+ERROR    root:landslide.py:175 {
+  "code": "404",
+  "apiCode": 404203,
+  "reason": "Running Test Not Found with RUN ID: 358",
+  "url": "http://10.133.6.19:8080/api/runningTests/358?action=delete"
+}
+
+INFO     root:landslide.py:171 delete the url: http://10.133.6.19:8080/api/runningTests/359?action=delete
+INFO     root:landslide.py:172 <Response [404]>
+ERROR    root:landslide.py:174 check the url and session
+ERROR    root:landslide.py:175 {
+  "code": "404",
+  "apiCode": 404203,
+  "reason": "Running Test Not Found with RUN ID: 359",
+  "url": "http://10.133.6.19:8080/api/runningTests/359?action=delete"
+}
+
