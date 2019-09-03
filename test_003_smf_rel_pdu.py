@@ -6,7 +6,6 @@ from config import *
 from NF import *
 
 #a = time.time()
-times = 5
 
 def test_003_start():
     capture_start()
@@ -32,9 +31,9 @@ def child_upf():
 
 #@pytest.fixture
 @pytest.fixture(scope = 'module')
-def ue_ip(get_test_id,smf_ip,times):
+def ue_ip(get_test_id,smf_ip):
     if get_test_id and smf_ip:
-        for i in range(times):
+        for i in range(5):
             logging.info('try get ue ip times: '+str(i))
             ue_ip = NF.smf_get_session(smf_ip,get_parameter('supi'),get_parameter('pdu_id'))
             if ue_ip:
@@ -71,9 +70,9 @@ def test_003_landslide_case_measurements_1(get_test_id):
 def test_003_smf_del_session(smf_ip):
     NF.smf_del_session(smf_ip,get_parameter('supi'),get_parameter('pdu_id'))
 
-def test_003_landslide_case_continue(get_test_id,times):
+def test_003_landslide_case_continue(get_test_id):
     if get_test_id:
-        for i in range(times):
+        for i in range(5):
             logging.info('try continue landslide case times: '+str(i))
             ls = Landslide.case_state(get_test_id)
             if ls == '5_Waiting':
@@ -86,9 +85,9 @@ def test_003_landslide_case_continue(get_test_id,times):
     else:
         return False
 
-def test_003_landslide_case_measurements_2(get_test_id,times):
+def test_003_landslide_case_measurements_2(get_test_id):
     if get_test_id:
-        for i in range(times):
+        for i in range(5):
             logging.info('post measurements of landslide case times: '+str(i))
             ls = Landslide.case_state(get_test_id)
             if ls == 'COMPLETE' or ls == 'COMPLETE_ERROR':
@@ -101,9 +100,9 @@ def test_003_landslide_case_measurements_2(get_test_id,times):
     else:
         return False
 
-def test_003_landslide_case_delete(get_test_id,times):
+def test_003_landslide_case_delete(get_test_id):
     if get_test_id:
-        for i in range(times):
+        for i in range(5):
             logging.info('try delete landslide case times: '+str(i))
             ls = Landslide.case_state(get_test_id)
             if ls == 'COMPLETE' or ls == 'COMPLETE_ERROR':
