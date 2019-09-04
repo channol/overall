@@ -4,9 +4,10 @@ import time,sys,os,re,logging
 from landslide import *
 from config import *
 from NF import *
+import allure
 
-#a = time.time()
-
+@allure.feature('SMF test')
+@allure.story('pdu session establishment request test')
 def test_start():
     capture_start()
 
