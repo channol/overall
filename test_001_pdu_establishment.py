@@ -45,15 +45,23 @@ def ue_ip(get_test_id,smf_ip):
     else:
         return False
 #############################################################
+@allure.feature('SMF test')
+@allure.story('pdu session establishment request test')
 def test_landslide_case_start(get_test_id):
     assert get_test_id, "landslide is running a case!"
 
+@allure.feature('SMF test')
+@allure.story('pdu session establishment request test')
 def test_smf_ip(smf_ip):
     assert smf_ip, "can not get smf ip!"
 
+@allure.feature('SMF test')
+@allure.story('pdu session establishment request test')
 def test_ue_ip(ue_ip):
     assert ue_ip, "can not get ue ip!"
 
+@allure.feature('SMF test')
+@allure.story('pdu session establishment request test')
 def test_upf_session_rule(child_upf,ue_ip):
     if ue_ip:
         rules = ['far','qer','pdr','urr']
@@ -61,6 +69,8 @@ def test_upf_session_rule(child_upf,ue_ip):
             NF.upf_session_rule(child_upf,ue_ip,rule)
     NF.upf_close(child_upf)
 
+@allure.feature('SMF test')
+@allure.story('pdu session establishment request test')
 def test_landslide_case_measurements_1(get_test_id):
     if get_test_id:
         logging.info('post measurements of landslide case times: ')
@@ -68,6 +78,8 @@ def test_landslide_case_measurements_1(get_test_id):
     else:
         return False
 
+@allure.feature('SMF test')
+@allure.story('pdu session establishment request test')
 def test_landslide_case_continue(get_test_id):
     if get_test_id:
         for i in range(5):
@@ -83,6 +95,8 @@ def test_landslide_case_continue(get_test_id):
     else:
         return False
 
+@allure.feature('SMF test')
+@allure.story('pdu session establishment request test')
 def test_landslide_case_measurements_2(get_test_id):
     if get_test_id:
         for i in range(10):
@@ -98,6 +112,8 @@ def test_landslide_case_measurements_2(get_test_id):
     else:
         return False
 
+@allure.feature('SMF test')
+@allure.story('pdu session establishment request test')
 def test_landslide_case_delete(get_test_id):
     if get_test_id:
         for i in range(5):
@@ -113,8 +129,9 @@ def test_landslide_case_delete(get_test_id):
     else:
         return False
 #############################################################
+@allure.feature('SMF test')
+@allure.story('pdu session establishment request test')
 def test_stop():
     capture_stop()
     get_log()
     time.sleep(3)
-#logging.info('spend time: '+str(time.time()-a))
