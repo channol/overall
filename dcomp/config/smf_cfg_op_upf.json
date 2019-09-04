@@ -30,7 +30,7 @@
       "pcf_svc_fqdn": "10.46.47.163",
       "pcf_port": 30055,
       "chf_svc_fqdn": "10.46.47.163",
-      "pcf_port": 30043,
+      "chf_port": 30043,
       "udm_svc_fqdn": "172.1.10.30",
       "udm_svc_port": 80 
     }]
@@ -52,7 +52,7 @@
       "pcf_svc_fqdn": "10.46.47.163",
       "pcf_port": 30055,
       "chf_svc_fqdn": "10.46.47.163",
-      "pcf_port": 30043
+      "chf_port": 30043
     }]
   }, {
     "sNssai": {
@@ -72,7 +72,7 @@
       "pcf_svc_fqdn": "10.46.47.163",
       "pcf_port": 30055,
       "chf_svc_fqdn": "10.46.47.163",
-      "pcf_port": 30043
+      "chf_port": 30043
     }]
   }, {
     "sNssai": {
@@ -92,7 +92,7 @@
       "pcf_svc_fqdn": "10.46.47.163",
       "pcf_port": 30055,
       "chf_svc_fqdn": "10.46.47.163",
-      "pcf_port": 30043
+      "chf_port": 30043
     }, {
       "dnn": "eMBB",
       "upf_infos": [{
@@ -106,7 +106,7 @@
       "pcf_svc_fqdn": "10.46.47.163",
       "pcf_port": 30055,
       "chf_svc_fqdn": "10.46.47.163",
-      "pcf_port": 30043
+      "chf_port": 30043
     }]
   }],
   "ltmap": [{
