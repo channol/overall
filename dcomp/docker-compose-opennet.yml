@@ -129,7 +129,7 @@ services:
     volumes:
       # Mount a local file to the container. The local file path is based on
       # the current working directory.
-      - "./config/pfcp_cfg.json:/etc/config/config.json"
+      - "./config/pfcp_cfg_new.json:/etc/config/config.json"
       - "./script:/cfg"
     command: /opt/casa/pfcp/pfcp
     cap_add:
@@ -149,7 +149,7 @@ services:
     image: ${SMFSM_IMG:-sm}
     volumes:
       # Mount a local file to the container.
-      - "./config/smf_cfg_op.json:/etc/config/config.json"
+      - "./config/smf_cfg_op_upf.json:/etc/config/config.json"
       #- "./config/450udm:/opt/casa/smf/sm/450udm"
       - "./script:/cfg"
       - "./log:/tmp/cores"
